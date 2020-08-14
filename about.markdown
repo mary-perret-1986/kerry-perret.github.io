@@ -7,7 +7,10 @@ permalink: /about/
 Hi I'm Kerry (Mackenzie) Perret, I'm a XX-yo Software Developer, currently based in Paris and working at [Veepee](https://veepee.com).
 
 I like:
-- (⚠️spoiler-alert) coding 💻
+- (⚠️spoiler-alert) coding 👩‍💻
+- the arts 🎶✒️🍿💃🗿🎨
+- hiking 🚶‍♀️🥾
+- supporting LGBTQ2+ indivdiuals 🏳️‍🌈⚢⚣⚤⚥⚧️⚦
 - debating using the principle of charity ⚖️
 - learning stuff 📚
 - self-deprecating humor 🙈
