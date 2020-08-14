@@ -1,6 +1,6 @@
 <<<<<<< HEAD
 # What iz dat?
-The (bad) code source (Jekyll) powering kerry-perret.github.io
+The (bad) source code (Jekyll) powering kerry-perret.github.io
 
 # How doz it work?
 
