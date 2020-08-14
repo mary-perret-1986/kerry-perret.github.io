@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # What iz dat?
 The (bad) code source (Jekyll) powering kerry-perret.github.io
 
