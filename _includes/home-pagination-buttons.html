@@ -1,0 +1,26 @@
+
+{% if paginator.total_pages >= 1 %}
+    <div class="center">
+        {% if paginator.previous_page %}
+            <div class="right shadowed brand-background rounded inline-blocked center post-navigation-button">
+                <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}" >
+                    <div style="padding: 6px;">
+                        <strong class="white">Newer Posts</strong>
+                    </div>    
+                </a>
+            </div>
+        {% endif %}
+
+        {% if paginator.next_page %}
+            <div class="left shadowed brand-background rounded inline-blocked center post-navigation-button">
+                <a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}" >
+                    <div style="padding: 6px;">
+                        <strong class="white">Older Posts</strong>
+                    </div>    
+                </a>
+            </div>
+        {% endif %}
+    </div>
+{% else %}
+    <h2 class="center">Oopsie seems there is like nothing else here...</h2>
+{% endif %}

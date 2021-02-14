@@ -1,0 +1,21 @@
+<div style="margin-top: 20px;">
+    {% if page.next.url %}
+        <div title="{{ page.next.title }}" class="right stylish-tooltip-not-that-close shadowed brand-background rounded inline-blocked center post-navigation-button">
+            <a href="{{ page.next.url }}" >
+                <div style="padding: 7px;">
+                    <strong class="white">Next Post</strong>
+                </div>    
+            </a>
+        </div>
+    {% endif %}
+
+    {% if page.previous.url %}
+        <div title="{{ page.previous.title }}" class="left stylish-tooltip-not-that-close shadowed brand-background rounded inline-blocked center post-navigation-button">
+            <a href="{{ page.previous.url }}" >
+                <div style="padding: 7px;">
+                    <strong class="white">Previous Post</strong>
+                </div>    
+            </a>
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,356 @@
+
+
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+#progress-cont {
+    height: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+  
+#progress-bar {
+    height: 100%;
+    background-color: $brand-color;
+    box-shadow: 0 0 10px $brand-color, 0 0 5px $brand-color;
+}
+
+.white {
+    color: $text-color;
+}
+
+#back-to-top-button {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    padding: 7px 12px 7px 12px;
+    background-color: $brand-color;
+    opacity: 0.5;
+    display: none;
+    z-index: 9999;
+}
+
+#back-to-top-button:hover {
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    background-color: $brand-color-light;
+    opacity: 1;
+}
+
+.footer-heading {
+    text-shadow: 0 0 2px $brand-color-light;
+    animation: glow 500ms infinite alternate;
+}
+
+.post-navigation-button {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    width: 130px;
+}
+
+.inline-blocked {
+    display: inline-block; 
+}
+
+.shadowed {
+    -webkit-box-shadow: 1px 1px 2px 2px $brand-color;
+    -moz-box-shadow: 1px 1px 2px 2px $brand-color;
+    box-shadow: 1px 1px 2px 2px $brand-color;
+}
+
+.shadowed:hover {
+    -webkit-box-shadow: 1px 1px 5px 3px $brand-color;
+    -moz-box-shadow: 1px 1px 5px 3px $brand-color;
+    box-shadow: 1px 1px 5px 3px $brand-color;
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+img {
+    -webkit-box-shadow: 1px 1px 3px 2px $brand-color;
+    -moz-box-shadow: 1px 1px 3px 2px $brand-color;
+    box-shadow: 1px 1px 3px 2px $brand-color;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    -webkit-box-shadow: 1px 1px 5px 3px $brand-color;
+    -moz-box-shadow: 1px 1px 5px 3px $brand-color;
+    box-shadow: 1px 1px 5px 3px $brand-color;
+}
+
+.brand-background {
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+
+    background-color: $brand-color;
+}
+
+.brand-background:hover {
+    background-color: $brand-color-light !important;
+}
+
+.footer-disclaimer {
+    color: $grey-color;
+    font-size: small;
+}
+
+.light-border-bottom {
+    border-bottom: 1px dashed darkgrey !important;
+}
+
+.light-border-top {
+    border-top: 1px dashed darkgrey !important;
+}
+
+.brand-color {
+    color: $brand-color;
+}
+
+.social-icon {
+    margin: 10px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.post-title {
+    text-align: center;
+}
+
+.engraved {
+    text-shadow: 0 2px 0 $background-color;
+}
+
+.post-meta {
+    text-align: center;
+    font-size: 18px !important;
+    text-shadow: 0 2px 0 $background-color;
+}
+
+.footer-col-wrapper {
+    margin: auto;
+}
+
+.post-link {
+    padding: 10px;
+    background-color: lighten($background-color, 10%);
+    -o-transition: 150ms;
+    -ms-transition: 150ms;
+    -moz-transition: 150ms;
+    -webkit-transition: 150ms;
+    transition: 150ms;
+}
+
+.post-link:hover {
+    transform: scale(1.02, 1.02);
+}
+
+.post-link-title {
+    line-height: 30px;
+}
+
+
+.post-list-heading {
+    @include relative-font-size(2.7);
+    text-align: center;
+}
+
+html {
+    min-width: 310px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 350;
+}
+
+@media (max-width: $content-width) {
+    table {
+        width: 100%;
+        table-layout: fixed;
+        overflow-x: scroll;
+        display: inline-block
+    }
+}
+
+td {
+    min-width: 120px;
+}
+
+figure {
+    margin-bottom: 15px !important;
+}
+
+
+ul {
+    list-style-type: square;
+    
+}
+
+li::before {
+    color: $brand-color-light;
+}
+
+.page-link {
+    float: right;
+    line-height: 65px;
+    color: $brand-color !important;
+    text-shadow: 0 0 1px $brand-color-light !important;
+}
+
+.page-link, .site-title, .footer-heading {
+    color: $brand-color !important;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.site-title {
+    line-height: 35px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    animation: glow 500ms infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 2px $brand-color-light;
+    }
+    to {
+        text-shadow: 0 0 3px $brand-color-light;
+    }
+}
+
+.site-nav {
+    top: 15px;
+}
+
+P {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    -o-transition: 300ms;
+    -ms-transition: 300ms;
+    -moz-transition: 300ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+}
+
+.social-media-list a:hover {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color: $brand-color-light !important;
+    text-shadow: 0 0 8px $brand-color-light !important;
+}
+
+a:visited {
+    color: $brand-color;
+}
+
+body {
+    font-family: $base-font-family;
+}
+
+td.code {
+    padding: 0px 0px !important;
+    padding-left: 10px !important;
+}
+
+.gutter {
+    min-width: 5px;
+    padding: 0 0;
+    padding-left: 5px;
+    border: 0 none transparent;
+    border-right: 1px solid $text-color;
+}
+
+pre, .highlight {
+    margin: 0px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 0 none transparent;
+}
+
+.rouge-table {
+    margin-bottom: 0 !important;
+    overflow-x: inherit;
+    display: inline-block;
+    border: 0 none transparent;
+}
+
+.site-header {
+    border-top: 0 none transparent;
+}
+
+pre, code, .highlighter-rouge .highlight {
+    background-color: lighten($background-color, 10%);
+    font-family: 'Roboto Mono';
+    font-weight: 500;    
+}
+
+.highlighter-rouge {
+    margin-bottom: 15px;
+}
+
+code {
+    font-family: 'Roboto Mono';
+}
+
+.code {
+    padding: 0px 0px 0px 0px !important;
+}
+
+td.code {
+    border: 0 none transparent;
+}
+
+#nprogress .bar {
+    background: $brand-color !important;
+    min-height: 3px;
+    box-shadow: 0 0 10px $brand-color, 0 0 5px $brand-color;
+  }
+  
+ul li { 
+    padding-bottom: 5px; 
+}
+
+#nprogress .spinner-icon {
+    visibility: hidden;
+    border-top-color: $brand-color !important;
+    border-left-color: $brand-color !important;
+}

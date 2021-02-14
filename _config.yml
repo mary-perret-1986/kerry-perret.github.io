@@ -1,54 +1,50 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+title: Kerry👩 Perret's🍫 (Cheap💸) 80's✨ Diaries📓
+author: Kerry👩 Perret🍫
+description: > 
+  I👩 turn black stuff🍺 into craic😹.
+disclaimer1: > 
+  Disclaimer 1: Opinions expressed are solely my own and do not express the views or opinions of my employer. 
+disclaimer2: > 
+  Disclaimer 2: This is mainly a very poorly coded and self-deprecating blog.
 
-title: Kerry Perret's Diary 🖊️
-email: kerry.perret@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I turn Guinness 🍺🍀 into puns 😹.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# social links
 twitter_username: kerry_perret
 github_username: kerry-perret
+linkedin_username: kerry-perret
+stackoverflow_username: 4636721
+rss: rss
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+    # new version of Minima seems to f*ck up with code rendering when line numbers are enabled =|
+      line_numbers: false
+
+show_excerpts: false # set to true to show excerpts on the homepage
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Pagination
+paginate: 2
+paginate_path: "posts/page:num"
 
 # Build settings
 theme: minima
+markdown: kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: :compressed
 plugins:
   - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
+  - jekyll-seo-tag
+  - jekyll-paginate
+include: ['_pages']

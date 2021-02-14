@@ -1,0 +1,13 @@
+{% assign words_per_minute = 200 %}
+
+{% if post %}
+  {% assign words = post.content | strip_html | number_of_words %}
+{% elsif page %}
+  {% assign words = page.content | strip_html | number_of_words %}
+{% endif %}
+
+{% if words < words_per_minute %}
+  ~1 min read
+{% else %}
+  {{ words | divided_by:words_per_minute }} min read
+{% endif %}
