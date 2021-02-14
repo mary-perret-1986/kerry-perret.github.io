@@ -8,6 +8,23 @@
        <p class="center engraved">{{- site.description | escape -}}</p>
        <p class="center footer-disclaimer">{{- site.disclaimer1 | escape -}}</p>
        <p class="center footer-disclaimer">{{- site.disclaimer2 | escape -}}</p>
+       <audio id="nya-cat-audio">
+        <source src="http://files.simey.me/nyan.mp3"></source>
+        Your browser isn't invited for super fun audio time.
+       </audio>
+          
+       <img 
+       class="stylish-tooltip nya-cat-gif"
+       src="{{site.baseurl}}/assets/img/nya-cat.gif" alt="This is nya cat... meh-ow!"/>
+
+       <script>
+          var audio = $("#nya-cat-audio")[0];
+          $(".nya-cat-gif").mouseenter(function() {
+            audio.play();
+            alert("Meh-ow... Get your f*cking pawpaws off me!!!🐱‍🏍");
+            console.warn("I repeat: you shouldn't have messed up with my flying raibow space-cat!");
+          });
+       </script>
      </div>
 
   </div>
