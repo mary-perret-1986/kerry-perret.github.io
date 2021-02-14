@@ -9,19 +9,24 @@
        <p class="center footer-disclaimer">{{- site.disclaimer1 | escape -}}</p>
        <p class="center footer-disclaimer">{{- site.disclaimer2 | escape -}}</p>
        <audio id="nya-cat-audio">
-        <source src="https://www.cjoint.com/doc/19_05/IEfqyqh7PMX_Nyan-Cat-original-.mp3"></source>
-        Your browser isn't invited for super fun audio time.
+          <source src="https://www.cjoint.com/doc/19_05/IEfqyqh7PMX_Nyan-Cat-original-.mp3"></source>
+          Your browser isn't invited for super fun audio time.
        </audio>
           
        <img 
+       title="Meh-ow... Get your filthy pawpaws off me!!!🐱‍🏍"
        class="stylish-tooltip nya-cat-gif"
        src="{{site.baseurl}}/assets/img/nya-cat.gif" alt="This is nya cat... meh-ow!"/>
 
        <script>
+          var count = 0
           var audio = $("#nya-cat-audio")[0];
           $(".nya-cat-gif").mouseenter(function() {
-            audio.play();
-            alert("Meh-ow... Get your f*cking pawpaws off me!!!🐱‍🏍");
+            count++;
+            if (count == 42) {
+              alert("Meh-ow... Get your filthy pawpaws off me!!!🐱‍🏍");
+              audio.play();
+            }
             console.warn("I repeat: you shouldn't mess up with my flying rainbow space-cat!");
           });
        </script>
