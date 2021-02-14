@@ -2,6 +2,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if site.twitter_username -%}
+  <meta name="twitter:creator" content="@{{ site.twitter_username| cgi_escape | escape }}" />
+  <meta name="twitter:title" content="Hreflang: {{ page.title }}"/>
+  <meta name="twitter:description" content="{{ page.excerpt }}" />
+  {%- endif -%}
+  
   <title>{{ site.title | escape }}</title>
   {%- include pre-body-imports.html -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}

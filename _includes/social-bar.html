@@ -13,7 +13,7 @@
     {%- endif -%}
 
     {%- if site.github_username -%}
-      <a  href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
+      <a  href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
           class="stylish-tooltip"
           title="My once🕰️-in-a-while-updated📤 Github repositories🗃️!🐱‍💻">
         <i class="fab fa-github social-icon fa-2x"></i>
@@ -21,7 +21,7 @@
     {%- endif -%}
     
     {%- if site.linkedin_username -%}
-      <a  href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"
+      <a  href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}"
           class="stylish-tooltip" 
           title="My unprofessional LinkedIn🌃 profile!🐱‍👓">
           <i class="fab fa-linkedin social-icon fa-2x"></i>
@@ -37,7 +37,7 @@
     {%- endif -%}
 
     {%- if site.stackoverflow_username -%}
-      <a  href="https://stackoverflow.com/users/{{ site.stackoverflow_username }}"
+      <a  href="https://stackoverflow.com/users/{{ site.stackoverflow_username | cgi_escape | escape }}"
           class="stylish-tooltip" 
           title="My more-than-mediocre❤️‍🩹 SO profile!🐱‍🚀">
           <i class="fab fa-stack-overflow social-icon fa-2x"></i>
