@@ -198,4 +198,4 @@ You can always regret that you haven't done enough. But here are my cheap 2 cent
 
 > The devil😈 is in the details.
 
-{% include youtube-player.html id="lRpxecLkUHQ" %}
+{% include youtube-player.html id="Oc27GxSD_bI" %}
