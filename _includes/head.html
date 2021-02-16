@@ -6,9 +6,10 @@
   {%- if site.twitter_username -%}
   <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
   {%- endif -%}
-  <meta name="twitter:site" content="@">
   <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="{{ site.title }}">
   <meta name="og:site_name" content="{{ site.title }}">
+  <link rel="alternate" href="{{ site.url }}" hreflang="x-default" />
 
   {%- if page.id -%}
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
