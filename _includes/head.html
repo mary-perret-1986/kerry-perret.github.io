@@ -13,13 +13,13 @@
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta name="twitter:title" content="{{ page.title }}"/>
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  <meta property="og:url" hreflang="x-default" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:title" content="{{ site.title }}">
   <meta name="twitter:title" content="{{ site.title }}"/>
-  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:url" hreflang="x-default" content="{{ site.url }}" />
   {%- endif -%}
 
   {%- include favicons.html -%}
