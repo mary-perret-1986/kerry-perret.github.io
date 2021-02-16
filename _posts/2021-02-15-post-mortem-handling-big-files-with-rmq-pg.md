@@ -175,7 +175,7 @@ We had this premise, because in our past experience with Entity Framework🧰, t
 
 But keep in mind that the opposite is also true (i.e. afaik, these days, the vast majority of the software developers on Earth aren't coding in assembly). There is a middle-ground, but it changes over time, due to skills, deadlines, priorities, and so forth. 
 
-So contrary to the popular belief🌎 that it's usually better to have a close-to-the-metal🔧 implementation that you can gradually customize and tune accordingly to your very needs (and illustrated in articles like [this one](https://www.ouarzy.com/2020/12/27/dont-reinvent-the-wheel), or [that one](https://www.ouarzy.com/2019/09/29/writing-code-isnt-the-bottleneck)), it seems that well it's not always that "straightforward". 
+So contrary to the popular belief🌎 that it's usually better to have a close-to-the-metal🔧 implementation that you can gradually customize and tune accordingly to your very needs (and illustrated in articles like [this one](https://www.ouarzy.com/2020/12/27/dont-reinvent-the-wheel), or [that one](https://www.ouarzy.com/2019/09/29/writing-code-isnt-the-bottleneck)), it seems that well it's not always that "straightforward" to figure who or more exactly what is actually doing the heavy lifting.
 
 Maintaining our messaging implementation✉️ with the official RabbitMQ .NET client with all its caveats has a cost and it has become increasingly expensive to keep up with all the new features and the ones that are going to be realeased. 
 
