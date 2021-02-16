@@ -9,6 +9,25 @@
     height: 50px;
 }
 
+.left {
+    text-align: left !important;
+}
+
+.tag {
+    background-color: lighten($background-color, 15%);
+    border-radius: 6px;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.mr2 {
+    margin-right: 2px !important;
+}
+
+.mb2 {
+    margin-bottom: 2px !important;
+}
+
 .right {
     float: right;
 }
@@ -150,7 +169,7 @@ img:hover {
 }
 
 .center {
-    text-align: center;
+    text-align: center !important;
 }
 
 .post-title {
@@ -162,7 +181,6 @@ img:hover {
 }
 
 .post-meta {
-    text-align: center;
     font-size: 18px !important;
     text-shadow: 0 2px 0 $background-color;
 }
@@ -199,9 +217,12 @@ html {
     min-width: 310px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 350;
-}
+h1 { font-size: xx-large !important; } 
+h2 { font-size: x-large !important; } 
+h3 { font-size: larger !important; } 
+h4 { font-size: large !important; } 
+h5 { font-size: medium !important; } 
+h6 { font-size: small !important; } 
 
 @media (max-width: $content-width) {
     table {
@@ -223,11 +244,6 @@ figure {
 
 ul {
     list-style-type: square;
-    
-}
-
-li::before {
-    color: $brand-color-light;
 }
 
 .page-link {
@@ -355,6 +371,24 @@ td.code {
   
 ul li { 
     padding-bottom: 5px; 
+}
+
+ol li { 
+    padding-bottom: 5px; 
+}
+
+blockquote {
+    border-left: 5px solid $brand-color-light !important;
+    padding: 10px;
+    font-style: normal !important;
+    background-color: lighten($background-color, 10%);
+    box-shadow: 5px 5px 2px rgba(#000000, 0.5);
+}
+
+.highlighter-rouge > .highlight {
+    border-left: 5px solid $brand-color-light !important;
+    padding: 5px 2px 5px 5px;
+    box-shadow: 5px 5px 2px rgba(#000000, 0.5);
 }
 
 #nprogress .spinner-icon {

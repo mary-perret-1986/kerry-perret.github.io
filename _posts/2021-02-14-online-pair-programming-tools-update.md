@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Online Pair Programming Tools For Interviews (Update) 👩‍💻"
-tags: [online, pair-programming, interview]
+tags: online pair-programming interview
 ---
 
 # Why?
@@ -17,7 +17,7 @@ Either way, it's always nice to have something working out-of-the-box⌨️, sav
 
 - [Codeshare](https://codeshare.io): just an online notepad... no autocompletion or running capabilities.
 - [CoderPad](https://coderpad.io): non-free but provides running and (some) autocompletion capabilities.
-- [CodeBunk](https://codebunk.com): same as [CoderPad](https://coderpad.io) but with slightly more options.
+- [CodeBunk](https://codebunk.com): same as [CoderPad](https://coderpad.io) but with slightly more options (alas, except the autocompletion)
 - [CodeInterview](https://codeinterview.io): akin [CodeBunk](https://codebunk.com) with better and sleak UI.
 
 Although they are not free (unless you wanna spend your time creating multiple accounts to keep benefiting from the free trial stuff), I usually go with either [CodeBunk](https://codebunk.com) or [CodeInterview](https://codeinterview.io), since they both provide everything I need to assess🧪 the candidates I'm interviewing👩‍💻:

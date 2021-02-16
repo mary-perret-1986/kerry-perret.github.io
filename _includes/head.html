@@ -2,15 +2,29 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {%- if site.twitter_username -%}
-  <meta name="twitter:creator" content="@{{ site.twitter_username| cgi_escape | escape }}" />
-  <meta name="twitter:title" content="Hreflang: {{ page.title }}"/>
+  <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
   {%- endif -%}
-  
-  <title>{{ site.title | escape }}</title>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Hreflang: {{ page.title }}"/>
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:url" content="//www.example.com/URL of the article" />
+
+  {%- if page.id -%}
+  <meta name="twitter:description" content="{{ page.excerpt | escape }}">
+  <meta property="og:description" content="{{ page.excerpt | escape }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta property="og:description" content="{{ site.description }}">
+  {%- endif -%}
+
+  {%- include favicons.html -%}
+  {%- feed_meta -%}
   {%- include pre-body-imports.html -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  {%- include favicons.html -%}
+  <title>{{ site.title | escape }}</title>
+  
 </head>
