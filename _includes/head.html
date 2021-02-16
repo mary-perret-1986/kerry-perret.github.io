@@ -7,17 +7,18 @@
   <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
   {%- endif -%}
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Hreflang: {{ page.title }}"/>
 
   {%- if page.id -%}
   <meta name="twitter:description" content="{{ page.excerpt | escape }}">
   <meta property="og:description" content="{{ page.excerpt | escape }}">
   <meta property="og:title" content="{{ page.title }}">
+  <meta name="twitter:title" content="{{ page.title }}"/>
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   {% else %}
   <meta name="twitter:description" content="{{ site.description }}">
   <meta property="og:description" content="{{ site.description }}">
   <meta property="og:title" content="{{ site.title }}">
+  <meta name="twitter:title" content="{{ site.title }}"/>
   <meta property="og:url" content="{{ site.url }}" />
   {%- endif -%}
 
