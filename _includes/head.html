@@ -7,19 +7,34 @@
   <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
   {%- endif -%}
   <meta name="twitter:card" content="summary" />
+  <meta name="og:site_name" content="{{ site.title }}">
 
   {%- if page.id -%}
-  <meta name="twitter:description" content="{{ page.description }}">
-  <meta property="og:description" content="{{ page.description }}">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta property="og:title" content="{{ page.title }}">
-  <meta name="twitter:title" content="{{ page.title }}"/>
+  <meta property="og:description" content="{{ page.description }}">
   <meta property="og:url" hreflang="x-default" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="{{ page.title }}"/>
+  <meta name="twitter:description" content="{{ page.description }}">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <!-- Search Engine -->
+  <meta name="description" content="{{ page.description }}">
   {% else %}
-  <meta name="twitter:description" content="{{ site.description }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta property="og:title" content="{{ site.title }}">
-  <meta name="twitter:title" content="{{ site.title }}"/>
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:url" hreflang="x-default" content="{{ site.url }}" />
+  <!-- Twitter -->
+  <meta name="twitter:title" content="{{ site.title }}"/>
+  <meta name="twitter:description" content="{{ site.description }}">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="description" content="{{ site.description }}">
+  <!-- Search Engine -->
+  <meta name="description" content="{{ site.description }}">
   {%- endif -%}
 
   {%- include favicons.html -%}
