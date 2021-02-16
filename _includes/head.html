@@ -6,6 +6,7 @@
   {%- if site.twitter_username -%}
   <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
   {%- endif -%}
+  <meta name="twitter:site"    content="@">
   <meta name="twitter:card" content="summary" />
   <meta name="og:site_name" content="{{ site.title }}">
 
@@ -13,7 +14,7 @@
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:url" hreflang="x-default" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
   <!-- Twitter -->
   <meta name="twitter:title" content="{{ page.title }}"/>
   <meta name="twitter:description" content="{{ page.description }}">
@@ -26,7 +27,7 @@
   <!-- Open Graph general (Facebook, Pinterest & Google+) -->
   <meta property="og:title" content="{{ site.title }}">
   <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:url" hreflang="x-default" content="{{ site.url }}" />
+  <meta property="og:url" content="{{ site.url }}" />
   <!-- Twitter -->
   <meta name="twitter:title" content="{{ site.title }}"/>
   <meta name="twitter:description" content="{{ site.description }}">
