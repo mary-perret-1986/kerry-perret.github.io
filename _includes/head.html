@@ -9,8 +9,8 @@
   <meta name="twitter:card" content="summary" />
 
   {%- if page.id -%}
-  <meta name="twitter:description" content="{{ page.excerpt | escape }}">
-  <meta property="og:description" content="{{ page.excerpt | escape }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta property="og:description" content="{{ page.description }}">
   <meta property="og:title" content="{{ page.title }}">
   <meta name="twitter:title" content="{{ page.title }}"/>
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />

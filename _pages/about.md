@@ -2,6 +2,7 @@
 layout: page
 title: About 🆔
 permalink: /about/
+description: U
 ---
 
 ### Howdy y'all! 👋

@@ -2,6 +2,7 @@
 layout: post
 title: "Post-mortem: handling big files🗄️ with RabbitMQ🐇 and PostgreSQL🐘"
 tags: rabbitmq postgresql multithreading f#
+description: I love it when a plan comes together, but there are times it just doesn't.
 ---
 
 # TL;DR
@@ -198,4 +199,4 @@ You can always regret that you haven't done enough. But here are my cheap 2 cent
 
 > The devil😈 is in the details.
 
-{% include youtube-player.html id="Oc27GxSD_bI" %}
+{% include youtube-player.html id="NsUFBm1uENs" %}

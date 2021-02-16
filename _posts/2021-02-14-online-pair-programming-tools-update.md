@@ -2,6 +2,7 @@
 layout: post
 title: "Online Pair Programming Tools For Interviews (Update) 👩‍💻"
 tags: online pair-programming interview
+description: Sometimes you're better off investing rather than using a Skype message box...
 ---
 
 # Why?
