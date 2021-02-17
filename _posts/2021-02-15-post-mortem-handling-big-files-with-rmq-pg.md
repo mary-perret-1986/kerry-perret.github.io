@@ -55,10 +55,10 @@ Googling🔍 around🗺️ didn't yield too many results at first, even if we fo
 ## The Process🏃‍♀️
 
 Since there wasn't really a clear solution out of our prelimenary investigations, it was time to step back and see a slightly bigger picture about what the Hangfire job was doing overall:
-1. Requesting data from an API💱
-2. Creating groups🏘️ based on some predicates
-3. Processing the groups as commands in our PostgreSQL-based🐘 event store and hence persist💾 the newly generated events
-4. Publishing💾 the events to RabbitMQ🐇
+1. Request data from an API💱
+2. Create groups🏘️ based on some predicates
+3. Process the groups as commands in our PostgreSQL-based🐘 event store and then persist💾 the newly decided/generated events
+4. Publish💾 the events to RabbitMQ🐇
 
 ## Oopsie... seems like PostgreSQL🐘 is also failing❌!
 
@@ -103,6 +103,7 @@ Anyway, my colleague [Yazide Boujlil](https://www.linkedin.com/in/yazideboujlil/
 >
 > Now what is happening, in my opinion, is that we ended up in a situation where we overload both the server and the client. The server goes into a flow control mode which does not allow the client to empty its buffer and therefore any new channel creation is blocked until the cache is cleared. As there is a timeout on the channel creation, eventually the shit hit the fan.
 >
+
 We naively thought that using good old👵 [`ThreadLocal<'T>`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadlocal-1) was the simplest and easiest way to go to keep this one `IModel` instance per thread.
 
 But we kept investigating🔬 to tackle this `IModel` issue in a concurrent context, and found a few articles (two of the links below were written by [Mike Hadlow](https://twitter.com/mikehadlow), the author of the [EasyNetQ](https://easynetq.com) library):
@@ -191,7 +192,7 @@ It could be very tempting to draw this kind of conclusion, but the truth is "nop
 Fun facts:
 
 1. We actually even had a branch with the S3 solution ready to be merged a few months ago📅, but we didn't know business priorities would change that much over time and the priority was given to other more important topics🤑.
-2. We started with EasyNetQ back in the day, but the configuration system wasn't too appealing and we were afraid that we would have been stuck with this lib at some point akin, a situation similar to a vendor lock-in🔒.
+2. We started with EasyNetQ back in the day, but the configuration system wasn't too appealing and we were afraid that we would have been stuck with this lib at some point, i.e. a situation similar to a vendor lock-in🔒.
 
 _The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Kerry Moment🤸‍♀️, but let's just pretend it's actually wholesome🧸)._
 
