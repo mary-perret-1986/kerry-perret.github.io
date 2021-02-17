@@ -2,43 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  {%- if site.twitter_username -%}
-  <meta name="twitter:creator" content="@{{ site.twitter_username | cgi_escape | escape }}" />
-  {%- endif -%}
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="{{ site.title }}">
-  <meta name="og:site_name" content="{{ site.title }}">
-  <link rel="alternate" href="{{ site.url }}" hreflang="x-default" />
-
-  {%- if page.id -%}
-  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
-  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
-  <!-- Twitter -->
-  <meta name="twitter:title" content="{{ page.title }}"/>
-  <meta name="twitter:description" content="{{ page.description }}">
-  <!-- Schema.org for Google -->
-  <meta itemprop="name" content="{{ page.title }}">
-  <meta itemprop="description" content="{{ page.description }}">
-  <!-- Search Engine -->
-  <meta name="description" content="{{ page.description }}">
-  {% else %}
-  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-  <meta property="og:title" content="{{ site.title }}">
-  <meta property="og:description" content="{{ site.description }}">
-  <meta property="og:url" content="{{ site.url }}" />
-  <!-- Twitter -->
-  <meta name="twitter:title" content="{{ site.title }}"/>
-  <meta name="twitter:description" content="{{ site.description }}">
-  <!-- Schema.org for Google -->
-  <meta itemprop="name" content="{{ site.title }}">
-  <meta itemprop="description" content="{{ site.description }}">
-  <!-- Search Engine -->
-  <meta name="description" content="{{ site.description }}">
-  {%- endif -%}
-
+  {%- include meta-tags.html -%}
   {%- include favicons.html -%}
   {%- feed_meta -%}
   {%- include pre-body-imports.html -%}

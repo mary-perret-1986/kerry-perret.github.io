@@ -14,6 +14,9 @@ window.setupBackToTopButton = function () {
 
     function onBackToTopButtonClick() {
         $('html, body').animate({ scrollTop: 0 }, 500); 
+        if (window.isMobileOrTablet()) {
+            $('#back-to-top-button').blur();
+        }
         return false; 
     }
 
