@@ -7,7 +7,7 @@ description: I love it when a plan comes together, but there are times it just d
 
 # TL;DR
 
-Long story short: 90%-out-of-the-blue that you just don't.
+Long story short: 90%-out-of-the-blue chance that you just don't.
 
 If you want more details about our story, then feel free to keep reading 👓⬇️.
 
@@ -131,13 +131,13 @@ We started to draft our own implementation of `ThreadLocal<'T>` supporting the t
 
 ## "It works... but not on my machine!"👩‍💻(the usual Kerry)
 
-At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert we didn't and we were once again prooved all wrong🙅‍♀️. While we were reviewing our new solution before shipping it to our integration environment, we realized that when using a sizable amount of data, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and we did not... and we were all wondering "What could possibly go wrong?"
+At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we didn't and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we realized that when using a sizable amount of data, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and we did not... and we were all wondering "What could possibly go wrong?"
 
 ## "Hey Cap'👩‍✈️, looks like it's related to your hardware"
 
 Fair enough, yes, my laptop💻 is infamously slow when compared to the machines🖥️ of my teammates.
 
-Ok given that different pieces of hardware (RAM, CPU) either accessed (i.e. limited) thru a VM a Docker Container🐳 have different performances, it's then easy to understand the hardware powering this or that bit infra is likely to improve or worsen the capability to support a bigger number of concurrent writers. If your hardware falls short, it's very likely that you're going to have a lock-bottleneck at some point.
+Ok given that different pieces of hardware (RAM, CPU) either accessed (i.e. limited) thru a VM a Docker Container🐳 have different performances, it's then easy to understand the hardware powering this or that bit of infra is likely to improve or worsen the capability to support a bigger number of concurrent writers. If your hardware falls short, it's very likely that you're going to have a lock-bottleneck at some point.
 
 ## Better Parallelism, an attempt
 
@@ -167,6 +167,8 @@ Given all the information above, it becomes crystal clear🔮 that the main hicc
 ## ("a" Corporate[i.e. on-premise]) S3
 
 Our first and original sin was purely architectural, moving the file persistence💾 from the DB and Rabbit and hence keeping just a reference / ID to the file reference in the S3 bucket💿 alleviates a lot the IO burden, since we are essentially delegating⏏️ the infra burden to another service.
+
+Note: I didn't mention it when I first drafted this article, but if you consider that several instances are running and the even store is a very central building block in our architecture it makes sense to NOT burden it
 
 ## EasyNetQ
 
