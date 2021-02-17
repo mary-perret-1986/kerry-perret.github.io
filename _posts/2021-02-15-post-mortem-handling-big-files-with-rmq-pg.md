@@ -145,7 +145,7 @@ One way to tackle the overall concurrency per layer of infra was to adjust using
 
 ## "Btw, if it's really just a timeout problem, can't you just increase the value of the so-called timeout?"
 
-Yes and we did on multiple occasions. Also one more thing, it wasn't just about a Hangfire job, we also have an admin api so-to-speak to restart the job we mentioned early on and it was expected to run within 5 minutes (of as fast as possible). The thing is that it wasn't just a timeout thing, nor was it just about parallelism and whatnot, cause...
+Yes and we did on multiple occasions. Also one more thing, it wasn't just about a Hangfire job, we also have an admin api so-to-speak to restart the job we mentioned early on and it was expected to run within 5 minutes (or as fast as possible). The thing is that it wasn't just a timeout thing, or even just about parallelism and what we already listed above, cause...
 
 ## Big File💾  (You Are Beautiful🌅)
 
@@ -178,7 +178,7 @@ But keep in mind that the opposite is also true (i.e. afaik, these days, the vas
 
 So contrary to the popular belief🌎 that it's usually better to have a close-to-the-metal🔧 implementation that you can gradually customize and tune accordingly to your very needs (and illustrated in articles like [this one](https://www.ouarzy.com/2020/12/27/dont-reinvent-the-wheel), or [that one](https://www.ouarzy.com/2019/09/29/writing-code-isnt-the-bottleneck)), it seems that well it's not always that "straightforward" to figure who or more exactly what is actually doing the heavy lifting.
 
-Maintaining our messaging implementation✉️ with the official RabbitMQ .NET client with all its caveats has a cost and it has become increasingly expensive to keep up with all the new features and the ones that are going to be realeased. 
+Maintaining our messaging implementation✉️ with the official RabbitMQ .NET client with all its caveats has a cost and it has become increasingly expensive to keep up with all the new features and the ones that are going to be released. 
 
 The value💰 we bring to our project is not measured by the time we spent on tweaking the official .NET client and doing the heavy lifting ourselves but rather by providing business-value to our stakeholders and end-users. 
 
@@ -189,7 +189,7 @@ It could be very tempting to draw this kind of conclusion, but the truth is "nop
 Fun facts:
 
 1. We actually even had a branch with the S3 solution ready to be merged a few months ago📅, but we didn't know business priorities would change that much over time and the priority was given to other more important topics🤑.
-2. We started with EasyNetQ back in the day, but the configuration system wasn't too appealing and we were afraid that we would have been stuck with this lib at some point akin to a vendor lock-in🔒.
+2. We started with EasyNetQ back in the day, but the configuration system wasn't too appealing and we were afraid that we would have been stuck with this lib at some point akin, a situation similar to a vendor lock-in🔒.
 
 _The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Kerry Moment🤸‍♀️, but let's just pretend it's actually wholesome🧸)._
 
