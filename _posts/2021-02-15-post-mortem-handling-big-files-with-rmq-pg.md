@@ -168,7 +168,7 @@ Given all the information above, it becomes crystal clear🔮 that the main hicc
 
 Our first and original sin was purely architectural, moving the file persistence💾 from the DB and Rabbit and hence keeping just a reference / ID to the file reference in the S3 bucket💿 alleviates a lot the IO burden, since we are essentially delegating⏏️ the infra burden to another service.
 
-Note: I didn't mention it when I first drafted this article, but if you consider that several instances are running and the even store is a very central building block in our architecture it makes sense to NOT burden it
+Note: I didn't mention it when I first drafted this article, but if you consider that several instances of the same service are running simulatenously and given that the even store is a very central building block in our architecture it makes sense to NOT burden it with long concurrent writes.
 
 ## EasyNetQ
 
