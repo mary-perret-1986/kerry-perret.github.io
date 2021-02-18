@@ -91,7 +91,6 @@ Tbf, it was already a source of struggles🏋️‍♀️, actually we've notice
 - [`AsyncLock`](https://github.com/EasyNetQ/EasyNetQ/blob/develop/Source/EasyNetQ/Internals/AsyncLock.cs)
 - [`RabbitAdvancedBus`](https://github.com/EasyNetQ/EasyNetQ/blob/521589682b76123b0c409086c5afe86f7659871b/Source/EasyNetQ/RabbitAdvancedBus.cs#L335)
 - [`PersistentChannel`](https://github.com/EasyNetQ/EasyNetQ/blob/develop/Source/EasyNetQ/Producer/PersistentChannel.cs)
-- [`ClientCommandDispatcherExtensions`](https://github.com/EasyNetQ/EasyNetQ/blob/develop/Source/EasyNetQ/Producer/ClientCommandDispatcherExtensions.cs)
 
 Anyway, my colleague [Yazide Boujlil](https://www.linkedin.com/in/yazideboujlil/) managed to come up with the explanations below:
 
