@@ -199,7 +199,9 @@ _The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Kerry Moment�
 
 You can always regret that you haven't done enough. But here are my cheap 2 cents👛: it's pointless. You can't know everything in advance and making wild guesses about the future doesn't seem like a reasonable option either. **You learn what you can learn from something that didn't pan out as good as you expected it to be, but it doesn't mean that the decisions you made back then were all just plain wrong**. 
 
-**Your decision process is just as contextual as the constraints involved when you were making those very same decisions at a given time📆. It is unproductive to place the blame on a context, I would even go as far as to say that blaming is probably the thing we should all probably refrain ourselves from doing. Instead we would all be much better off focusing on finding solutions and actionable tasks to solve our problems rather than just getting pissed at the circumstances and going round in circles.**. 
+**Your decision process is just as contextual as the constraints involved when you were making those very same decisions at a given time📆. It is unproductive to place the blame on a context.**
+
+**I would even go as far as to say that blaming is probably the thing we should all probably refrain ourselves from doing. Instead we would all be much better off focusing on finding solutions and actionable tasks to solve our problems rather than just getting pissed at the circumstances and going round in circles.** 
 
 > The devil😈 is in the details.
 
