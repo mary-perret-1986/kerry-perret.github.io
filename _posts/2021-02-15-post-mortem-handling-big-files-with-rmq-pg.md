@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Post-mortem: handling big files🗄️ with RabbitMQ🐇 and PostgreSQL🐘"
-tags: rabbitmq postgresql multithreading f#
+tags: rabbitmq postgresql concurrency
 description: I love it when a plan comes together, but there are times it just doesn't.
 ---
 
