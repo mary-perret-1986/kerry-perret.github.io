@@ -62,7 +62,7 @@ Since there wasn't really a clear solution out of our prelimenary investigations
 
 ## Oopsie... seems like PostgreSQL🐘 is also failing❌!
 
-Truth to be told🧙‍♀️, there was another issue occuring when the newly generated events were published to the RabbitMQ but also sometimes during the PostgreSQL persistence step as well🔎:
+Truth to be told🧙‍♀️, there was also an issue occuring during the PostgreSQL persistence step as well🔎:
 
 ```
 An unhandled exception has occurred while executing the request.
@@ -81,11 +81,11 @@ eam))
 
 Another pesty little detail🦠, is that we tried to speed up⏩ the RabbitMQ publishing process using [`PSeq`](http://fsprojects.github.io/FSharp.Collections.ParallelSeq) and the [PublishBatch API of the official RabbitMQ .NET client](https://github.com/rabbitmq/rabbitmq-dotnet-client/blob/master/projects/RabbitMQ.Client/client/impl/BasicPublishBatch.cs#L38). 
 
-The thing you see is that during our first iteration🧗‍♀️ when implementing this service (and more generally-speaking when we were implementing the RabbitMQ support in our codebase), we already have experienced issues when playing with [`IModel`](https://github.com/rabbitmq/rabbitmq-dotnet-client/blob/master/projects/RabbitMQ.Client/client/api/IModel.cs/#L48) in a concurrent fashion (i.e. multithreading) which obviously turned out to be a rather infamously well-known concern👩‍🎤, so much that there is in fact, [a section of the official RabbitMQ dedicated about it](https://www.rabbitmq.com/dotnet-api-guide.html#concurrency-channel-sharing):
+The thing you see, is that during our first iteration🧗‍♀️ when implementing this service (and more generally-speaking when we were implementing the RabbitMQ support in our codebase), we already have experienced issues while experimenting with [`IModel`](https://github.com/rabbitmq/rabbitmq-dotnet-client/blob/master/projects/RabbitMQ.Client/client/api/IModel.cs/#L48) in a concurrent fashion (i.e. multithreading) which obviously turned out to be a rather infamously well-known concern👩‍🎤. So much, that there is in fact, [a section of the official RabbitMQ dedicated about it](https://www.rabbitmq.com/dotnet-api-guide.html#concurrency-channel-sharing):
 
 > As a rule of thumb, `IModel` instance usage by more than one thread simultaneously should be avoided. Application code should maintain a clear notion of thread ownership for `IModel` instances.
 
-So here is the catch, we were not using EasyNetQ, or any abstraction layer on top of [the official RabbitMQ .NET client](https://github.com/rabbitmq/rabbitmq-dotnet-client), and things like the management of a single instance of `IModel` per thread was suboptimal to put it mildly, i.e. we were creating a new `IModel` instance everytime we needed to send a batch of messages wich at some point started to create a bottleneck (i.e. several instantiations per thread🧵). 
+So here is the catch, we were not using EasyNetQ, or any abstraction layer on top of [the official RabbitMQ .NET client](https://github.com/rabbitmq/rabbitmq-dotnet-client), and something like the management of a single instance of `IModel` per thread was suboptimal to put it mildly, i.e. we were creating a new `IModel` instance everytime we needed to send a batch of messages wich at some point started to create a bottleneck (i.e. several instantiations per thread🧵). 
 
 Tbf, it was already a source of struggles🏋️‍♀️, actually we've noticed that our implementation was much slower🐌 at sending messages than the EasyNetQ abstraction... and one of the reasons was the way EasyNetQ achieved this one single `IModel` instance per thread policy, in essence the number of `IModel` instances is kept to a bare minimum. Some of the important building blocks are listed below:
 - [`AsyncLock`](https://github.com/EasyNetQ/EasyNetQ/blob/develop/Source/EasyNetQ/Internals/AsyncLock.cs)
@@ -104,9 +104,9 @@ Anyway, my colleague [Yazide Boujlil](https://www.linkedin.com/in/yazideboujlil/
 > Now what is happening, in my opinion, is that we ended up in a situation where we overload both the server and the client. The server goes into a flow control mode which does not allow the client to empty its buffer and therefore any new channel creation is blocked until the cache is cleared. As there is a timeout on the channel creation, eventually the shit hit the fan.
 >
 
-We naively thought that using good old👵 [`ThreadLocal<'T>`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadlocal-1) was the simplest and easiest way to go to keep this one `IModel` instance per thread.
+We naively thought that using the good old👵 [`ThreadLocal<'T>`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.threadlocal-1) was the simplest and easiest way to go to keep this one `IModel` instance per thread.
 
-But we kept investigating🔬 to tackle this `IModel` issue in a concurrent context, and found a few articles (two of the links below were written by [Mike Hadlow](https://twitter.com/mikehadlow), the author of the [EasyNetQ](https://easynetq.com) library):
+Anyhoo, we kept investigating🔬 to tackle this `IModel` issue in a concurrent context, and found a few articles (two of the links below were written by [Mike Hadlow](https://twitter.com/mikehadlow), the author of the [EasyNetQ](https://easynetq.com) library):
 
 - [Very high latency for GC when using (loads of) `ThreadLocal`](https://github.com/dotnet/runtime/issues/2382)
 - [EasyNetQ: A Breaking Change, `IPublishChannel`](https://dzone.com/articles/easynetq-breaking-change)
@@ -128,17 +128,17 @@ Fair enough, we kept googling🔎 and found these two little gems💎 drafted by
 As well this library📚:
 - [UnmanagedThreadUtils](https://github.com/ptupitsyn/UnmanagedThreadUtils)
 
-We started to draft our own implementation of `ThreadLocal<'T>` supporting the thread exiting scenario when carrying a `IDisposable` resource akin to the implementation given in [this SO answer](https://stackoverflow.com/a/7670762/4636721).
+We started to draft our own implementation of `ThreadLocal<'T>` supporting the thread exiting scenario when carrying a `IDisposable` resource, a bit like what is described in [this SO answer](https://stackoverflow.com/a/7670762/4636721).
 
 ## "It works... but not on my machine!"👩‍💻(the usual Kerry)
 
-At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we didn't and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we realized that when using a sizable amount of data, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and we did not... and we were all wondering "What could possibly go wrong?"
+At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we did not and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we quickly realized that there was something off when using a sizable amount of data. In fact, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and... and we were all wondering "How is that even possible?"
 
 ## "Hey Cap'👩‍✈️, looks like it's related to your hardware"
 
 Fair enough, yes, my laptop💻 is infamously slow when compared to the machines🖥️ of my teammates.
 
-Ok given that different pieces of hardware (RAM, CPU) either accessed (i.e. limited) thru a VM a Docker Container🐳 have different performances, it's then easy to understand the hardware powering this or that bit of infra is likely to improve or worsen the capability to support a bigger number of concurrent writers. If your hardware falls short, it's very likely that you're going to have a lock-bottleneck at some point.
+It didn't take us too long to realize that given different pieces of hardware (RAM, CPU) accessed (i.e. limited) either thru a VM or a Docker Container🐳 mean they still can have vastly different performances. It's then easy to understand that the underlying hardware powering this or that bit of infra is likely to improve or worsen the capability to support a bigger number of concurrent writers. If your hardware falls short, it's very likely that you're going to have a lock-bottleneck at some point.
 
 ## Better Parallelism, an attempt
 
@@ -148,7 +148,7 @@ One way to tackle the overall concurrency per layer of infra was to adjust using
 
 Yes and we did on multiple occasions. Also one more thing, it wasn't just about a Hangfire job, we also have an admin api so-to-speak to restart the job we mentioned early on and it was expected to run within 5 minutes (or as fast as possible). The thing is that it wasn't just a timeout thing, or even just about parallelism and what we already listed above, cause...
 
-## Big File💾  (You Are Beautiful🌅)
+## Big File💾 (You Are Beautiful🌅)
 
 ... basically here is the deal, we needed to juggled with all these intertwined bits of parameters:
 - PostgreSQL: Timeout (we want that as fast as possible)⏰
@@ -157,33 +157,35 @@ Yes and we did on multiple occasions. Also one more thing, it wasn't just about 
 - Maximum degree of parallelism per "IO layer" 🔀
 - The respective bits of hardware / VM / Docker containers supporting a given service and relevant bits of infrastructure dependencies💪
 
-and last but not least, the average size of the files💾 we are playing with on which we had no control whatsoever. 
+The overall problem looked like a Gordian knot🧶 until we realized that we could bypass it altogether with a different approach... when we started to a have closer look at... well... the files💾 and more precisely, their average size.
 
-And in retrospect, persisting "relatively big files" 100MB either to a JSONB column🧮 or to RabbitMQ (tho for the RabbitMQ part there were split based on some business conditions) was really the best option ever, performance-wise🐢.
+In retrospect, persisting "relatively big files" 100MB either to a JSONB column🧮 or to RabbitMQ (tho for the RabbitMQ part there were first split based on some business conditions) wasn't really the best option available out there... performance-wise🐢.
 
 # Solution
 
-Given all the information above, it becomes crystal clear🔮 that the main hiccup was to persist files where they were not really supposed to be persisted... so we decided to use... 
+Given all the information above, it became crystal clear🔮 that the main hiccup was to persist files where they were not really supposed to be persisted... so we decided to use... 
 
 ## ("a" Corporate[i.e. on-premise]) S3
 
-Our first and original sin was purely architectural, moving the file persistence💾 from the DB and Rabbit and hence keeping just a reference / ID to the file reference in the S3 bucket💿 alleviates a lot the IO burden, since we are essentially delegating⏏️ the infra burden to another service.
+Our first and original "sin"🛐 was purely architectural📐. Removing the file persistence💾 from PostgreSQL and RabbitMQ "duties" and hence keeping just a reference(i.e. ID) to the file in the S3 bucket💿 did alleviate a lot the IO burden by several orders of magnitude.
+
+What we have done is essentially delegating⏏️ the infra burden to another service that is good at handling file persistence and "voila"🍷🥖.
 
 Note: I didn't mention it when I first drafted this article, but if you consider that several instances of the same service are running simulatenously and given that the even store is a very central building block in our architecture it makes sense to NOT burden it with long concurrent writes.
 
 ## EasyNetQ
 
-This issue made us realize another problem, when we started to use RabbitMQ in our project we thought we would need a certain granularity hence the decision to pick the rather low-level RabbitMQ .NET official client...
+This issue (and the investigations we did around this issue) made us realize another problem. When we started to use RabbitMQ in our project we thought we would need a certain granularity hence the decision to pick the rather low-level RabbitMQ .NET official client...
 
-We had this premise, because in our past experience with Entity Framework🧰, the overly complex abstraction made us miserable😿 and we were spending (i.e. wasting?) more time fighting⚔️ the framework rather than benefiting from it (i.e. you deliver less business-value). 
+We had this premise, because in our past experience with Entity Framework🧰, the overly complex abstraction made us litterally miserable😿 and we were spending (i.e. wasting?) more time fighting⚔️ the framework than benefiting from it (i.e. you deliver less business-value).
 
 But keep in mind that the opposite is also true (i.e. afaik, these days, the vast majority of the software developers on Earth aren't coding in assembly). There is a middle-ground, but it changes over time, due to skills, deadlines, priorities, and so forth. 
 
-So contrary to the popular belief🌎 that it's usually better to have a close-to-the-metal🔧 implementation that you can gradually customize and tune accordingly to your very needs (and illustrated in articles like [this one](https://www.ouarzy.com/2020/12/27/dont-reinvent-the-wheel), or [that one](https://www.ouarzy.com/2019/09/29/writing-code-isnt-the-bottleneck)), it seems that well it's not always that "straightforward" to figure who or more exactly what is actually doing the heavy lifting.
+So... I hate to break it to you dear reader... but contrary to the popular belief🌎 that "it's always better to have a close-to-the-metal🔧 implementation that you can gradually customize and tune accordingly to your very needs" (and illustrated in articles like [this one](https://www.ouarzy.com/2020/12/27/dont-reinvent-the-wheel), or [that one](https://www.ouarzy.com/2019/09/29/writing-code-isnt-the-bottleneck)), it seems that well it's not always that "straightforward" to figure out who or more exactly what is actually doing the heavy lifting.
 
-Maintaining our messaging implementation✉️ with the official RabbitMQ .NET client with all its caveats has a cost and it has become increasingly expensive to keep up with all the new features and the ones that are going to be released. 
+Maintaining our messaging implementation✉️ with the official RabbitMQ .NET client with all its caveats had a cost and it became increasingly expensive to keep up with all the new features and the ones that are going to be released. 
 
-The value💰 we bring to our project is not measured by the time we spent on tweaking the official .NET client and doing the heavy lifting ourselves but rather by providing business-value to our stakeholders and end-users. 
+The value💰 we bring to our project is not measured by the time we spent on tweaking the official RabbitMQ .NET client by doing the heavy lifting ourselves but rather by providing business-value to our stakeholders and end-users. 
 
 # "It's all your f*cking fault!" or "Amateur-hour, Admit it! You just made a monumental mistake!"
 
@@ -196,9 +198,9 @@ Fun facts:
 
 _The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Kerry Moment🤸‍♀️, but let's just pretend it's actually wholesome🧸)._
 
-You can always regret that you haven't done enough. But here are my cheap 2 cents👛: it's pointless. You can't know everything in advance and making wild guesses about the future doesn't seem like a reasonable option. **You learn what you can learn from something that didn't pan out as good as you expected it to be, but it doesn't mean that the decisions you made back then were all just plain wrong**. 
+You can always regret that you haven't done enough. But here are my cheap 2 cents👛: it's pointless. You can't know everything in advance and making wild guesses about the future doesn't seem like a reasonable option either. **You learn what you can learn from something that didn't pan out as good as you expected it to be, but it doesn't mean that the decisions you made back then were all just plain wrong**. 
 
-**Your decision process is just as contextual as the constraints involved when you were making those very same decisions at a given time📆**. 
+**Your decision process is just as contextual as the constraints involved when you were making those very same decisions at a given time📆. It is unproductive to place the blame on a context, I would even go as far as to say that blaming is probably the thing we should all probably refrain ourselves from doing. Instead we would all be much better off focusing on finding solutions and actionable tasks to solve our problems rather than just getting pissed at the circumstances and going round in circles.**. 
 
 > The devil😈 is in the details.
 
