@@ -129,7 +129,7 @@ As well this library📚:
 
 We started to draft our own implementation of `ThreadLocal<'T>` supporting the thread exiting scenario when carrying a `IDisposable` resource, a bit like what is described in [this SO answer](https://stackoverflow.com/a/7670762/4636721).
 
-## "It works... but not on my machine!"👩‍💻(the usual Kerry)
+## "It works... but not on my machine!"👩‍💻(the usual Natalie)
 
 At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we did not and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we quickly realized that there was something off when using a sizable amount of data. In fact, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and... and we were all wondering "How is that even possible?"
 
@@ -195,7 +195,7 @@ Fun facts:
 1. We actually even had a branch with the S3 solution ready to be merged a few months ago📅, but we didn't know business priorities would change that much over time and the priority was given to other more important topics🤑.
 2. We started with EasyNetQ back in the day, but the configuration system wasn't too appealing and we were afraid that we would have been stuck with this lib at some point, i.e. a situation similar to a vendor lock-in🔒.
 
-_The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Kerry Moment🤸‍♀️, but let's just pretend it's actually wholesome🧸)._
+_The Cheesy🧀-Corny🍿 Moment⌛ (also known as The Emotional Natalie Moment🤸‍♀️, but let's just pretend it's actually wholesome🧸)._
 
 You can always regret that you haven't done enough. But here are my cheap 2 cents👛: it's pointless. You can't know everything in advance and making wild guesses about the future doesn't seem like a reasonable option either. **You learn what you can learn from something that didn't pan out as good as you expected it to be, but it doesn't mean that the decisions you made back then were all just plain wrong**. 
 
