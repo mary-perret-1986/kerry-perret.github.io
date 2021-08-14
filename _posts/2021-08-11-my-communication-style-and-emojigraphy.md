@@ -13,7 +13,7 @@ Everybody has different communication styles and it can be hard for two people t
 
 There are many factors that can make communication between individuals challenging, i.e. different backgrounds, cultures, and upbringrings, etc. I thought it could come in handy to have a page sharing my "communication style", inc. my emojis.
 
-For example, throughout my career, I had people who told me that:
+For example, throughout my career, I had people who resp. told me that:
 - I'm too straightforward and transparent
 - I'm passive-agressive
 - I'm "shy"
@@ -37,7 +37,6 @@ I'm someone who is usually seen as blunt (tho like I mentionned above, some peop
 
 # My🐈 Emojigraphy🎨
 
-
   Emoji    | Meaning                                                      |
 ---------- | -------------------------------------------------------------|
  🤔/🧐    | "Thinking"                                                   |
@@ -53,6 +52,7 @@ I'm someone who is usually seen as blunt (tho like I mentionned above, some peop
  😮/🙀     | "Oh no! / Something unexpected"                             |
  🤦‍♀️        | "I screwed up / messed up / failed"                         |
  🤷‍♀️/🤐     | "I dunno / I don't get it / Meh"                           |
+ 👿        | "I'm angry / pissed off"                                    |
  🙇‍♀️        | "Thanks!"                                                   |
  🐈        | "A cat", "Me / My / We"                                     |
 
