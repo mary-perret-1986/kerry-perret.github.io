@@ -5,11 +5,13 @@ tags: communication emojigraphy
 description: Different strokes for different folks
 ---
 
-> Communication is a a two-way street.
+> Communication is a two-way street.
 >  
 > Mutual understanding is a prerequisite for effective communication and I think it's often and rather pointless to expect others to adjust to your communication style, especially if they haven't got to know you personally.
 
-Everybody has different communication styles and it's hard to find a common ground that is good enough for every one of us (i.e. different backgrounds, cultures, and upbringrings, etc.). I thought it could handy to share with you my "communication style", inc. my emojis.
+Everybody has different communication styles and it can be hard for two people to be on the exact same page, especially if they haven't got the chance to mingle with each other for long enough prior to them interacting
+
+There are many factors that can make communication between individuals challenging, i.e. different backgrounds, cultures, and upbringrings, etc. I thought it could come in handy to have a page sharing my "communication style", inc. my emojis.
 
 Throughout my career, I had people who told me that:
 - I'm too straightforward and transparent
