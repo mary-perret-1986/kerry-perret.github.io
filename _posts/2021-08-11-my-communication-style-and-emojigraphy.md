@@ -9,20 +9,22 @@ description: Different strokes for different folks
 >  
 > Mutual understanding is a prerequisite for effective communication and I think it's often and rather pointless to expect others to adjust to your communication style, especially if they haven't got to know you personally.
 
-Everybody has different communication styles and it can be hard for two people to be on the exact same page, especially if they haven't got the chance to mingle with each other for long enough prior to them interacting
+Everybody has different communication styles and it can be hard for two people to be on the exact same page. Especially if they haven't got the chance to mingle with each other for long enough prior to them interacting.
 
 There are many factors that can make communication between individuals challenging, i.e. different backgrounds, cultures, and upbringrings, etc. I thought it could come in handy to have a page sharing my "communication style", inc. my emojis.
 
-Throughout my career, I had people who told me that:
+For example, throughout my career, I had people who told me that:
 - I'm too straightforward and transparent
 - I'm passive-agressive
-- I'm too "shy"
+- I'm "shy"
 - I'm too verbose and detailed
-- I'm too blunt and outspoken
-- I'm too politically correct
+- I'm way too blunt and outspoken
+- I'm politically correct
+- I'm overly apolegetic
 - I'm not fun, I'm too serious and boring
+and despite the fact that I've probably changed, at least a bit over the last decade or so, I'm a tad skeptical that it's only on my end that things have changed. After all, don't we say that "beauty is in the eye of the beholder".
 
-It depends on a lot of parameters, context, interlocutors, how close you are with them, suffice to say, there isn't a one-size-fits-all solution, there will be faux pas whether you want it or not. 
+Well you see, interpretation depends on a lot of parameters, context, interlocutors, how close you are, suffice to say, there isn't a one-size-fits-all solution, there will be faux pas whether you want it or not. 
 
 # My🐈 Communication💬 Style👩‍🎨
 
