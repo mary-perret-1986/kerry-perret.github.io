@@ -63,7 +63,7 @@ Mostly applied to work and casual conversations.
 
 I have hard times interpreting: 🙂, 🙃, 😁, 😆, 😉, 🤣, 😩
 
-Actually, I do like the concept of tone tags (https://toneindicators.carrd.co), but:
+Actually, I do like [the concept of tone tags](https://toneindicators.carrd.co), but:
 1. I'm far from being an expert about them
 2. Alas, I think most people are completely foreign to them
 
