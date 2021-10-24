@@ -82,7 +82,7 @@ Last but not least, I'm always trying to make not only my own premises as clear 
 
 You would be surprised how often people think they are debating when they just can't. When your "[axioms](https://en.wikipedia.org/wiki/Axiom)" are so fundamentally different from the ones of the persons you're talkin to, there is very little chance you can reason with them.
 
-Axioms are far too often granted to be the same of both sides of the conversations, and usually they're not quite the same. Clarifying positions right from the get-go avoid wasting time on things you can't agree on.
+Axioms are far too often granted to be the same of both sides of a conversation, and usually they're not quite the same. Clarifying positions right from the get-go avoid wasting time on things you can't agree on.
 
 Reminds me of Wednesday in American Gods season 2, Episode 4, entitled "The Greatest Story Ever Told": 
 
