@@ -37,10 +37,14 @@ I'm someone who is usually seen as blunt (tho, like I mentionned above, some peo
 
 # My🐈 Emojigraphy🎨
 
+Mostly applied to work and casual conversations.
+
+(not necessarily to blog posts)
+
   Emoji    | Meaning  
 ---------- | -------
  🤔/🧐    | "Thinking / "Pondering"                                                   
- 🤸‍♀️/😄/😸 | "It's fun / wholesome!"                                     
+ 🤸‍♀️/😄/😸/😅/🤣 | "It's fun / wholesome!"                                     
  😻/💚/💃 | "Cool / Awesome / I love it!"                                
  🎉/🥳     | "Victory, Congrats!"                                       
  ✔️        | "Yes / Done / Checked"                                       
@@ -48,7 +52,8 @@ I'm someone who is usually seen as blunt (tho, like I mentionned above, some peo
  ⚙️        | "WIP / Processing"                                           
  🏃‍♀️        | "I'm rushing / working out"                                   
  🙋‍♀️        | "Hi / I'm raising my hand"                                    
- 😓/💦     | "Oopsie, I've missed something out / It was a (very) close call! / Litterally sweating [It's not gross, I'm just a fucking human being]"                        
+ 😓/💦     | "Oopsie, I've missed something out / It was a (very) close call! / Litterally sweating [It's not gross, I'm just a fucking human being]"
+ 😇         | "I'm innocent, well not really"                   
  😮/🙀     | "Oh no! / Something unexpected / Surprising!"                             
  🤦‍♀️        | "I screwed up / messed up / failed / doesn't make any sense"                         
  🤷‍♀️/🤐     | "I dunno / I don't get it / Meh"                          
@@ -56,7 +61,7 @@ I'm someone who is usually seen as blunt (tho, like I mentionned above, some peo
  🙇‍♀️        | "Thanks!"                                                  
  🐈        | "A cat", "Me / My / We"                                    
 
-I have hard times interpreting: 🙂, 🙃, 😅, 😁, 😆, 😉, 🤣, 😇, 😩
+I have hard times interpreting: 🙂, 🙃, 😁, 😆, 😉, 🤣, 😩
 
 Actually, I do like the concept of tone tags (https://toneindicators.carrd.co), but:
 1. I'm far from being an expert about them
