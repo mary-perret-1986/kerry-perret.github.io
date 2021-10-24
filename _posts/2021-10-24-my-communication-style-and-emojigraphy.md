@@ -37,7 +37,7 @@ I'm someone who is usually seen as blunt (tho, like I mentionned above, some peo
 
 # My🐈 Emojigraphy🎨
 
-Mostly applied to work and casual conversations.
+Mostly applied to work and casual conversations (with some notable exceptions, I'm not yet a machine, and arguably a biological one).
 
 (not necessarily to blog posts)
 
