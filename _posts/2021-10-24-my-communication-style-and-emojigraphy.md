@@ -24,7 +24,7 @@ For example, throughout my career, I had people who resp. told me that:
 - I'm not fun, I'm too serious and boring
 and despite the fact that I've probably changed, at least a bit over the last decade or so, I'm a tad skeptical that it's only on my end that things have changed. After all, don't we say that "beauty is in the eye of the beholder".
 
-Well you see, interpretation depends on a lot of parameters, context, interlocutors, how close you are with them, suffice to say, there isn't a one-size-fits-all solution, there will be faux pas whether you want it or not. 
+Well you see, interpretation depends greatly on a lot of parameters, context, interlocutors, how close you are with them, suffice to say, there isn't a one-size-fits-all solution, there will be faux pas whether you want it or not. 
 
 # My🐈 Communication💬 Style👩‍🎨
 
@@ -37,9 +37,7 @@ I'm someone who is usually seen as blunt (tho, like I mentionned above, some peo
 
 # My🐈 Emojigraphy🎨
 
-Mostly applied to work and casual conversations (with some notable exceptions, I'm not yet a machine, and arguably a biological one).
-
-(not necessarily to blog posts)
+Mostly applied to work and casual conversations (with some notable exceptions, I'm not yet a machine, and arguably a biological one), not necessarily to blog posts.
 
   Emoji    | Meaning  
 ---------- | -------
@@ -61,7 +59,7 @@ Mostly applied to work and casual conversations (with some notable exceptions, I
  🙇‍♀️        | "Thanks!"                                                  
  🐈        | "A cat", "Me / My / We"                                    
 
-I have hard times interpreting: 🙂, 🙃, 😁, 😆, 😉, 🤣, 😩
+I have hard times interpreting: 🙂, 🙃, 😁, 😆, 😉, 😩 and a bunch of others.
 
 Actually, I do like [the concept of tone tags](https://toneindicators.carrd.co), but:
 1. I'm far from being an expert about them
