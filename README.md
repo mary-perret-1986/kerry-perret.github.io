@@ -1,6 +1,6 @@
 # natalie-o-perret.github.io
 
-The repository of my rubbish natalie-perret-1986.github.io static "website".
+The repository of my rubbish natalie-o-perret.github.io static "website".
 
 # How-to
 
