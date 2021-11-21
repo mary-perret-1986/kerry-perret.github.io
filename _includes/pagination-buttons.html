@@ -4,7 +4,7 @@
         {% if paginator.previous_page %}
             <div style="float: left;" class="shadowed brand-background rounded inline-blocked center post-navigation-button">
                 <a href="{{ paginator.previous_page_path | relative_url | replace: '//', '/' }}" >
-                    <div style="padding: 6px;">
+                    <div class="button-padding">
                         <strong class="white">Newer Posts</strong>
                     </div>    
                 </a>
@@ -14,7 +14,7 @@
         {% if paginator.next_page %}
             <div style="float: right;" class="shadowed brand-background rounded inline-blocked center post-navigation-button">
                 <a href="{{ paginator.next_page_path | relative_url | replace: '//', '/' }}" >
-                    <div style="padding: 6px;">
+                    <div class="button-padding">
                         <strong class="white">Older Posts</strong>
                     </div>    
                 </a>

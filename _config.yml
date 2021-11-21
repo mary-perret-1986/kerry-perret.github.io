@@ -7,6 +7,7 @@ disclaimer1: >
 disclaimer2: > 
   Disclaimer 2: This is mainly a very poorly coded and self-semi-deprecating blog. Take it with a pinch of salt.
 url: https://nataly-o-perret.github.io
+email: natalie-o-perret@gmail.com
 
 # social links
 twitter_username: natalie_perret
@@ -21,7 +22,7 @@ kramdown:
     # new version of Minima seems to f*ck up with code rendering when line numbers are enabled =|
       line_numbers: false
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_descriptions: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -43,7 +44,7 @@ markdown: kramdown
 highlighter: rouge
 sass:
   sass_dir: _sass
-  style: :compressed
+  style: compressed
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

@@ -19,12 +19,17 @@ layout: default
             {{ post.title | escape }}
           </div>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <div class="post-meta">
+          <div class="post-meta" style="padding-top: 3px;">
             <i class="fas fa-calendar-alt"></i>
             {{ post.date | date: date_format }}
             •
             <i class="fas fa-clock"></i>  
             {%- include read-time.html -%}
+            <p style="padding-top: 5px;">
+              {%- if site.show_descriptions and post.description -%}
+              {{ post.description }}
+              {%- endif -%}
+            </p>
           </div>
           <div class="post-meta">
             <i class="fas fa-tag mr5"></i>
@@ -32,10 +37,6 @@ layout: default
               <span class="tag">{{ tag }}</span>
             {%- endfor -%}
           </div>
-            
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
         </a>
       </li>
       {%- endfor -%}

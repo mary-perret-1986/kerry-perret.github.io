@@ -1,4 +1,8 @@
 
+.button-padding {
+    padding: 3px 3px 2px 3px;
+}
+
 .nya-cat-gif{
     -webkit-box-shadow: 0 0 0 0 transparent;
     -moz-box-shadow: 0 0 0 0 transparent;
@@ -20,6 +24,12 @@
     margin-right: 5px;
     margin-top: 5px;
     display: inline-block;
+}
+
+.fa-1_8x {
+    font-size: 1.8em;
+    line-height: .75em;
+    vertical-align: -0.0667
 }
 
 .mr2 {
@@ -61,12 +71,21 @@
     color: $text-color;
 }
 
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+
 #back-to-top-button {
     position: fixed;
     right: 10px;
     bottom: 10px;
     cursor: pointer;
-    padding: 7px 12px 7px 12px;
+    padding: 5px 10px 3px 10px;
     background-color: $brand-color;
     opacity: 0.5;
     display: none;
@@ -91,20 +110,26 @@
 .post-navigation-button {
     margin-top: 10px; 
     margin-bottom: 10px; 
-    width: 130px;
+    width: 80px;
 }
 
 .inline-blocked {
     display: inline-block; 
 }
 
-.shadowed {
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shadowed, img {
     -webkit-box-shadow: 1px 1px 2px 2px $brand-color;
     -moz-box-shadow: 1px 1px 2px 2px $brand-color;
     box-shadow: 1px 1px 2px 2px $brand-color;
 }
 
-.shadowed:hover {
+.shadowed:hover, img:hover{
     -webkit-box-shadow: 1px 1px 5px 3px $brand-color;
     -moz-box-shadow: 1px 1px 5px 3px $brand-color;
     box-shadow: 1px 1px 5px 3px $brand-color;
@@ -117,25 +142,6 @@
 
 .rounded {
     border-radius: 2px;
-}
-
-img {
-    -webkit-box-shadow: 1px 1px 3px 2px $brand-color;
-    -moz-box-shadow: 1px 1px 3px 2px $brand-color;
-    box-shadow: 1px 1px 3px 2px $brand-color;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img:hover {
-    -o-transition: 300ms;
-    -ms-transition: 300ms;
-    -moz-transition: 300ms;
-    -webkit-transition: 300ms;
-    transition: 300ms;
-    -webkit-box-shadow: 1px 1px 5px 3px $brand-color;
-    -moz-box-shadow: 1px 1px 5px 3px $brand-color;
-    box-shadow: 1px 1px 5px 3px $brand-color;
 }
 
 .brand-background {
@@ -307,6 +313,7 @@ a:hover {
     color: $brand-color-light !important;
     text-shadow: 0 0 8px $brand-color-light !important;
 }
+
 
 a:visited {
     color: $brand-color;

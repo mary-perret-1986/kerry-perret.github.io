@@ -5,9 +5,11 @@ permalink: /about/
 description: U
 ---
 
-### Howdy y'all! 👋
+### Me(H)owdy y'all! 👋
 
-🙋‍♀️I am Natalie🐈, I am a Software Developer 👩‍💻, currently based in Paris and working @ Veepee.
+![It's me(ow)](/assets/img/avatar.jpg)
+
+🙋‍♀️Hey, I'm Natalie🐈! I am a Software Developer 👩‍💻, currently based in Paris and working @ Veepee.
 
 Some bits about myself...
 
@@ -23,7 +25,7 @@ Some bits about myself...
 and I like...
 
 - (⚠️spoiler-alert) coding 💻 stuff that, hopefully, can bring some value to others
-- the annoyingly glowing purple colour 💜
+- the annoyingly glowing purple-ish colour 💜
 - the arts 🎶✒️🍿💃🗿🎨
 - hiking 🚶‍♀️🥾
 - supporting LGBTQ2+ indivdiuals 🏳️‍🌈⚢⚣⚤⚥⚧️⚦
