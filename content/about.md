@@ -1,10 +1,10 @@
 ---
-title: "About"
+title: "About🆔"
 layout: "single"
 url: "/about/"
 cover: 
   image: "./images/about.jpg"
-  caption: "Meow"
+  caption: "Meow 🐈"
 ---
 
 # Me(h)ow-dy y'all! 🐱🐮

@@ -40,8 +40,6 @@
     --top-link-hover-bg: rgb(65, 66, 68, 1);
 }
 
-
-
 .post-content blockquote {
     border-inline-start: 3px solid var(--link-hover);
 }
@@ -343,3 +341,41 @@ details[open] .inner {
     background-color: var(--entry-hover);
     transition: var(--global-transition);
 }
+
+#theme-toggle svg {
+    display: none;
+}
+
+body.dark #theme-toggle:hover::before {
+    content: '☀️';
+}
+body:not(.dark) #theme-toggle:hover::before {
+    content: '🌒';
+}
+body.dark #theme-toggle::before {
+    content: '🌒';
+}
+body:not(.dark) #theme-toggle:before {
+    content: '☀️';
+}
+#theme-toggle:hover {
+    transition: var(--global-transition);
+    transform: scale(1.2);
+}
+#theme-toggle {
+    transition: var(--global-transition);
+    transform: scale(0.9);
+}
+
+.breadcrumbs::before {
+    content: '🏠';
+}
+
+.page-header svg {
+    display: none;
+}
+
+.toc span::after {
+    content: '📇';
+}
+
