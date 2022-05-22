@@ -346,12 +346,6 @@ details[open] .inner {
     display: none;
 }
 
-body.dark #theme-toggle:hover::before {
-    content: '☀️';
-}
-body:not(.dark) #theme-toggle:hover::before {
-    content: '🌒';
-}
 body.dark #theme-toggle::before {
     content: '🌒';
 }
