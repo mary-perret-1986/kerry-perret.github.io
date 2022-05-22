@@ -353,16 +353,15 @@ body.dark #theme-toggle::before {
 body:not(.dark) #theme-toggle:before {
     content: '🌒';
 }
+#theme-toggle {
+    transition: var(--global-transition);
+    transform: scale(0.9);
+}
 
 @media screen and (min-width: 768px) {
-
     #theme-toggle:hover {
         transition: var(--global-transition);
         transform: scale(1.2);
-    }
-    #theme-toggle {
-        transition: var(--global-transition);
-        transform: scale(0.9);
     }
 }
 
