@@ -139,7 +139,7 @@ As well this library📚:
 
 We started to draft our own implementation of `ThreadLocal<'T>` supporting the thread exiting scenario when carrying a `IDisposable` resource, a bit like what is described in [this SO answer](https://stackoverflow.com/a/7670762/4636721).
 
-## "It works... but not on my machine!" (the usual Natalie 🙋‍♀️)
+## "It works... but not on my machine!" (the usual Natalie 💻🙋‍♀️)
 
 At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we did not and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we quickly realized that there was something off when using a sizable amount of data. In fact, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and... and we were all wondering "How is that even possible?"
 
@@ -157,7 +157,7 @@ One way to tackle the overall concurrency per layer of infra was to adjust using
 
 Yes and we did on multiple occasions. Also one more thing, it wasn't just about a Hangfire job, we also have an admin api so-to-speak to restart the job we mentioned early on and it was expected to run within 5 minutes (or as fast as possible). The thing is that it wasn't just a timeout thing, or even just about parallelism and what we already listed above, cause...
 
-## Big File (You Are Beautiful!) 💾
+## Big File (You Are Beautiful!) 🌈💾
 
 ... basically here is the deal, we needed to juggled with all these intertwined bits of parameters:
 - PostgreSQL: Timeout (we want that as fast as possible)⏰
