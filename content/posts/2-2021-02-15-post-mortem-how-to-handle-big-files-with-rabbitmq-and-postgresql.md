@@ -1,27 +1,27 @@
 ---
-title: "Post-mortem: How To Handle Big Files With RabbitMQ and PostgreSQL?"
+title: "Post-mortem✨💀: How To Handle Big Files With RabbitMQ🐇 and PostgreSQL🐘?"
 date: "2021-02-15"
-description: "I love it when a plan comes together, but there are times it just doesn't."
+description: "I love it when a plan comes together, but there are times it just doesn't🪖."
 tags: ["coding", "work", "interview"]
 aliases: ["challenge-accepted"]
 cover: 
-  image: "./images/gallery/2014-PRC-Shanghai/03.jpg"
-  caption: "人山⛰️人海🌊"
+  image: "./images/gallery/2-2021-02-15-post-mortem-how-to-handle-big-files-with-rabbitmq-and-postgresql.jpg"
+  caption: "I can clearly see the elephant🇹🇭🐘, but where is Nivens McTwisp🐰? "
   series: []
-draft: true
+draft: false
 hideMeta: false
 searchHidden: false
 ShowToc: true
 TocOpen: false
 ---
 
-# TL;DR
+# TL;DR ⏱️
 
 Long story short: 90%-out-of-the-blue chance that you just don't.
 
 If you want more details about our story, then feel free to keep reading 👓⬇️.
 
-# Context
+# Context 🖼️
 
 A not-so-long-while🦖 ago🦕 we had some alerts📟🔔 in our dedicated Slack Channel💬, triggered every now and then when a particular HangFire job was running:
 
@@ -39,7 +39,7 @@ Depth 1: System.TimeoutException
 The operation has timed out.
 ```
 
-## At first, it was just a RabbitMQ thingy...
+## At first, it was just a RabbitMQ thingy... 🐇
 
 We then looked at our logs in Kibana🔍, just to find out that there was actually an issue related to opening a RabbitMQ Channel📡:
 ```
@@ -62,7 +62,7 @@ Googling🔍 around🗺️ didn't yield too many results at first, even if we fo
 - [Opening a channel inside a consumer interface callback times out waiting for continuation](https://github.com/rabbitmq/rabbitmq-dotnet-client/issues/650)
 - [Timeout exception when trying to declare a queue (or exchange)](https://github.com/rabbitmq/rabbitmq-dotnet-client/issues/310)
 
-## The Process
+## The Process ⚙️
 
 Since there wasn't really a clear solution out of our prelimenary investigations, it was time to step back and see a slightly bigger picture about what the Hangfire job was doing overall:
 1. Request data from an API💱
@@ -70,7 +70,7 @@ Since there wasn't really a clear solution out of our prelimenary investigations
 3. Process the groups as commands in our PostgreSQL-based🐘 event store and then persist💾 the newly decided/generated events
 4. Publish💾 the events to RabbitMQ🐇
 
-## Oopsie... seems like PostgreSQL is also failing!
+## Oopsie... seems like PostgreSQL 🐘 is also failing!
 
 Truth to be told🧙‍♀️, there was also an issue occuring during the PostgreSQL persistence step as well🔎:
 
@@ -87,7 +87,7 @@ eam))
  ---> System.TimeoutException: Timeout during reading attempt
 ```
 
-## RabbitMQ + Multithreading: A Love Story
+## RabbitMQ🐇 + Multithreading 🧵: A Love Story 💞... Nope❌
 
 Another pesty little detail🦠, is that we tried to speed up⏩ the RabbitMQ publishing process using [`PSeq`](http://fsprojects.github.io/FSharp.Collections.ParallelSeq) and the [PublishBatch API of the official RabbitMQ .NET client](https://github.com/rabbitmq/rabbitmq-dotnet-client/blob/master/projects/RabbitMQ.Client/client/impl/BasicPublishBatch.cs#L38). 
 
@@ -139,25 +139,25 @@ As well this library📚:
 
 We started to draft our own implementation of `ThreadLocal<'T>` supporting the thread exiting scenario when carrying a `IDisposable` resource, a bit like what is described in [this SO answer](https://stackoverflow.com/a/7670762/4636721).
 
-## "It works... but not on my machine!" (the usual Natalie)
+## "It works... but not on my machine!" (the usual Natalie 🙋‍♀️)
 
 At this stage, we were fairly confident that we had a working solution to solve our initial problem. But spoiler alert: we did not and we were once again prooved all wrong🙅‍♀️, once again. While we were reviewing our new solution before shipping it to our integration environment, we quickly realized that there was something off when using a sizable amount of data. In fact, I still kept having timeouts⏰ while my other colleagues did not. We were all testing using the same codebase and the same Docker configuration🐋... so by all accounts we were supposed to get the same results and... and we were all wondering "How is that even possible?"
 
-## "Hey Cap', looks like it's related to your hardware"
+## "Hey Cap', looks like it's related to your hardware" 💽👩‍✈️
 
 Fair enough, yes, my laptop💻 is infamously slow when compared to the machines🖥️ of my teammates.
 
 It didn't take us too long to realize that given different pieces of hardware (RAM, CPU) accessed (i.e. limited) either thru a VM or a Docker Container🐳 mean they still can have vastly different performances. It's then easy to understand that the underlying hardware powering this or that bit of infra is likely to improve or worsen the capability to support a bigger number of concurrent writers. If your hardware falls short, it's very likely that you're going to have a lock-bottleneck at some point.
 
-## Better Parallelism, an attempt
+## Better Parallelism, an attempt ↗️🧵
 
 One way to tackle the overall concurrency per layer of infra was to adjust using the TPL [DataFlow - TPL](https://docs.microsoft.com/en-us/dotnet/standard/parallel-programming/dataflow-task-parallel-library). It goes without saying that different environment had different infra constraints.
 
-## "Btw, if it's really just a timeout problem, can't you just increase the value of the so-called timeout?"
+## "Btw, if it's really just a timeout problem, can't you just increase the value of the so-called timeout?" ↗️⏳
 
 Yes and we did on multiple occasions. Also one more thing, it wasn't just about a Hangfire job, we also have an admin api so-to-speak to restart the job we mentioned early on and it was expected to run within 5 minutes (or as fast as possible). The thing is that it wasn't just a timeout thing, or even just about parallelism and what we already listed above, cause...
 
-## Big File (You Are Beautiful!)
+## Big File (You Are Beautiful!) 💾
 
 ... basically here is the deal, we needed to juggled with all these intertwined bits of parameters:
 - PostgreSQL: Timeout (we want that as fast as possible)⏰
@@ -170,11 +170,11 @@ The overall problem looked like a Gordian knot🧶 until we realized that we cou
 
 In retrospect, persisting "relatively big files" 100MB either to a JSONB column🧮 or to RabbitMQ (tho for the RabbitMQ part there were first split based on some business conditions) wasn't really the best option available out there... performance-wise🐢.
 
-# Solution
+# Solution 🌟
 
 Given all the information above, it became crystal clear🔮 that the main hiccup was to persist files where they were not really supposed to be persisted... so we decided to use... 
 
-## ("a" Corporate[i.e. on-premise]) S3
+## ("a" Corporate[i.e. on-premise]) S3 ☁️
 
 Our first and original "sin"🛐 was purely architectural📐. Removing the file persistence💾 from PostgreSQL and RabbitMQ "duties" and hence keeping just a reference(i.e. ID) to the file in the S3 bucket💿 did alleviate a lot the IO burden by several orders of magnitude.
 
@@ -182,7 +182,7 @@ What we have done is essentially delegating⏏️ the infra burden to another se
 
 Note: I didn't mention it when I first drafted this article, but if you consider that several instances of the same service are running simulatenously and given that the even store is a very central building block in our architecture it makes sense to NOT burden it with long concurrent writes.
 
-## EasyNetQ
+## EasyNetQ 🐰⌨️
 
 This issue (and the investigations we did around this issue) made us realize another problem. When we started to use RabbitMQ in our project we thought we would need a certain granularity hence the decision to pick the rather low-level RabbitMQ .NET official client...
 
@@ -196,7 +196,7 @@ Maintaining our messaging implementation✉️ with the official RabbitMQ .NET c
 
 The value💰 we bring to our project is not measured by the time we spent on tweaking the official RabbitMQ .NET client by doing the heavy lifting ourselves but rather by providing business-value to our stakeholders and end-users. 
 
-# "It's all your f*cking fault!" or "Amateur-hour, Admit it! You just made a monumental mistake!"
+# "It's all your f*cking fault!" or "Amateur-hour, Admit it! You just made a monumental mistake!" 🙇‍♀️
 
 It could be very tempting to draw this kind of conclusion, but the truth is "nope", nawt really, sorry pal, I do mean it.
 

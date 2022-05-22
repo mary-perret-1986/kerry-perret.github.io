@@ -1,7 +1,7 @@
 ---
 title: "Challenge Accepted ✅ "
 date: "2020-08-14"
-description: "Don't make promises that you can't keep. 🙅‍♀"
+description: "Don't make promises that you can't keep🙅‍♀."
 tags: ["introduction", "blogging"]
 aliases: ["challenge-accepted"]
 cover: 
