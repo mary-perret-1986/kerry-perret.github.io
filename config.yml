@@ -21,18 +21,20 @@ languages:
         weight: 1
         menu:
             main:
-                - name: Archives🗃️
-                  url: archives/
-                  weight: 1
-                - name: Tags🏷️
-                  url: tags/
-                  weight: 2
-                - name: Search🔍
-                  url: search/
-                  weight: 3
                 - name: About🆔
                   url: about
                   weight: 4
+                - name: Search🔍
+                  url: search/
+                  weight: 3
+                - name: Tags🏷️
+                  url: tags/
+                  weight: 2
+                - name: Archives🗃️
+                  url: archives/
+                  weight: 1
+
+
 
 outputs:
     home:
