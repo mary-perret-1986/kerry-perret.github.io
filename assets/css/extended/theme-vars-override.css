@@ -22,6 +22,7 @@
     --top-link-hover-bg: rgb(214, 214, 214, 1);
     --global-transition: all 0.2s ease-in-out;
     --global-active-transform: scale(0.85);
+    --toggle-theme-transition: 250ms;
 }
 
 .dark {
@@ -375,4 +376,17 @@ body:not(.dark) #theme-toggle:before {
 
 .toc span::after {
     content: '📇';
+}
+
+.post-entry, .toc {
+    transition: 
+        transform .1s, 
+        background-color var(--toggle-theme-transition), 
+        border var(--toggle-theme-transition);
+}
+
+.transition-delay {
+    transition: 
+        background-color var(--toggle-theme-transition), 
+        border var(--toggle-theme-transition);
 }
