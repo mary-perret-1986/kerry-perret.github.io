@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on 🐈Natalie Perret🍫</title>
+    <link>https://adityatelange.github.io/hugo-PaperMod/tags/</link>
+    <description>Recent content in Tags on 🐈Natalie Perret🍫</description>
+    <image>
+      <url>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</url>
+      <link>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://adityatelange.github.io/hugo-PaperMod/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blogging</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/tags/blogging/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/tags/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>introduction</title>
+      <link>https://adityatelange.github.io/hugo-PaperMod/tags/introduction/</link>
+      <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://adityatelange.github.io/hugo-PaperMod/tags/introduction/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
