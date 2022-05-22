@@ -43,6 +43,7 @@
 
 .post-content blockquote {
     border-inline-start: 3px solid var(--link-hover);
+    background-color: var(--tertiary);
 }
 
 #searchbox input {
