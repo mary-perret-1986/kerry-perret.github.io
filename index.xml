@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🐈Natalie Perret🍫</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/</link>
+    <link>https://natalie-o-perret.github.io/</link>
     <description>Recent content on 🐈Natalie Perret🍫</description>
     <image>
-      <url>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</link>
+      <url>https://natalie-o-perret.github.io/papermod-cover.png</url>
+      <link>https://natalie-o-perret.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://adityatelange.github.io/hugo-PaperMod/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://natalie-o-perret.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Challenge Accepted ✅ </title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/posts/1-2020-08-14-challenge-accepted/</link>
+      <link>https://natalie-o-perret.github.io/posts/1-2020-08-14-challenge-accepted/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://adityatelange.github.io/hugo-PaperMod/posts/1-2020-08-14-challenge-accepted/</guid>
+      <guid>https://natalie-o-perret.github.io/posts/1-2020-08-14-challenge-accepted/</guid>
       <description>Don&amp;#39;t make promises that you can&amp;#39;t keep.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://adityatelange.github.io/hugo-PaperMod/about/</link>
+      <link>https://natalie-o-perret.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://adityatelange.github.io/hugo-PaperMod/about/</guid>
+      <guid>https://natalie-o-perret.github.io/about/</guid>
       <description>Me(h)ow-dy y&amp;rsquo;all! 🐱🐮 I am Natalie, a Software Developer 👩‍💻 currently based in Paris and working @ Veepee. I talk and write about work, legal stuff, ethics, mental health, and software development.
 What I&amp;rsquo;m up to these days 🗓️🤹‍♀️  🔭 I&amp;rsquo;m currently working on F# stuff at work and in my spare time. 🌱 I&amp;rsquo;m currently learning Rust 👯 I&amp;rsquo;m looking to collaborate on F#, C#, Rust 🤸‍♀️ I&amp;rsquo;m looking for help with Rust 💬 You can ask me about .</description>
     </item>

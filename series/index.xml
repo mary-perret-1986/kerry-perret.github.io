@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on 🐈Natalie Perret🍫</title>
-    <link>https://adityatelange.github.io/hugo-PaperMod/series/</link>
+    <link>https://natalie-o-perret.github.io/series/</link>
     <description>Recent content in Series on 🐈Natalie Perret🍫</description>
     <image>
-      <url>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</url>
-      <link>https://adityatelange.github.io/hugo-PaperMod/papermod-cover.png</link>
+      <url>https://natalie-o-perret.github.io/papermod-cover.png</url>
+      <link>https://natalie-o-perret.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://adityatelange.github.io/hugo-PaperMod/series/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://natalie-o-perret.github.io/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
