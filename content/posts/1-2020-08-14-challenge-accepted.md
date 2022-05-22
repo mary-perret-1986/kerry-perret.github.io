@@ -5,7 +5,7 @@ description: "Don't make promises that you can't keep."
 tags: ["introduction", "blogging"]
 aliases: ["challenge-accepted"]
 cover: 
-  image: "./images/gallery/2014-PRC-Shanghai/03.jpg"
+  image: "./images/gallery/1-2020-08-14-challenge-accepted.jpg"
   caption: "人山⛰️人海🌊"
   series: []
 draft: false
