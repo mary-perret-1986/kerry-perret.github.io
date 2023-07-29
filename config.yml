@@ -27,9 +27,12 @@ languages:
                 - name: Search🔍
                   url: search/
                   weight: 2
+                - name: Tags🏷️
+                  url: tags/
+                  weight: 3
                 - name: Archives🗃️
                   url: archives/
-                  weight: 3
+                  weight: 4
 
 
 outputs:
