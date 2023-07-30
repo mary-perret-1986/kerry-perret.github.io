@@ -124,6 +124,26 @@
     transform: var(--global-active-transform);
 }
 
+.buttons a {
+    font-weight: bold;
+    border: 1px solid var(--border);
+}
+
+.buttons:hover {
+    --secondary: var(--link-hover);
+    transition: var(--global-transition);
+    transform: translateY(-3px);
+}
+
+.buttons a:hover {
+    background-color: var(--entry-hover);
+}
+
+.buttons a:active {
+    transform: var(--global-active-transform);
+}
+
+
 .paginav span:hover:not(.title) {
     box-shadow: none;
 }
@@ -374,9 +394,6 @@ body:not(.dark) #theme-toggle:before {
     display: none;
 }
 
-.toc span::after {
-    content: '📇';
-}
 
 .post-entry, .toc {
     transition: 
@@ -389,4 +406,8 @@ body:not(.dark) #theme-toggle:before {
     transition: 
         background-color var(--toggle-theme-transition), 
         border var(--toggle-theme-transition);
+}
+
+.pagination {
+    font-weight: bold;
 }
