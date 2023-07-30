@@ -15,14 +15,16 @@ I had only two articles on this blog for the past 2-3 years, with very limited a
   - One annulment plus the relevant legal changes across multiple countries (red tape all over the world).
   - Moving twice.
   - Being promoted at work with an increasingly bigger scope, and constantly burning myself out in order to make up for the lack of proper context to build what was needed. Even when I was put on sick leaves.
-  - This is not even the end of my self-healing journey, there is so much more to come, but at least things got to a manageable level lately and I hope they can stay that way for the foreseeable future.
-- Another reason was my unassumed and constant strive for perfectionism. A trait that led me to lose focus in the details. This was not exactly wanting things to be picture perfect, but rather because of internal struggles, including what you might qualify as a "mental disorder".
-- But mental disorders and various impediments to productivity are not just exclusively "environmental" (e.g., poor upbringing), they can also be biological-slash-biochemical (e.g., your own tolerance to certain drugs and medicines, your particular metabolism, etc.).
-- I have matured a lot since those posts, and today, I hardly recognize the person I was then.
+  - This is not even the end of my journey. There is so much more to come, but at least things got to a manageable level lately and I hope they can stay that way for the foreseeable future.
+- Another reason was my unassumed and constant strive for perfectionism: 
+  - A trait that led me to lose focus in the details and distractions, ultimately leading to the frustration of never finishing something completely, and increasing my insecurity feelings. 
+  - This was not exactly like wanting things to be picture perfect, but rather because of internal struggles, including what you might qualify as a "mental disorder".
+  - But mental disorders and various impediments to productivity are not just exclusively "environmental" (e.g., poor upbringing), they can also be biological-slash-biochemical (e.g., your own tolerance to certain drugs and medicines, your particular metabolism, etc.).
+- All in all, I have matured a lot since those posts, and today, I hardly recognize the person I was then.
 
-Despite this, I wanted to write and share more, not only for others but primarily for myself, yes, a simple and unapologetic self-serving act. 
+Despite of all the above, I wanted to write and share more, not only for others but primarily for myself, yes, a simple and unapologetic self-serving act. 
 
-And it is not only for the sake of improving or maintain my writing skills, but also to keep a record of my learnings and experiences, how I perceive them at a given point in time.
+And it is not only for the sake of improving or maintain my writing skills, but also to keep a record of my learnings and experiences, and, how I perceive them at a given point in time.
 
 ## Coming up with a Sensible Set of Blogging Guidelines: Distilled Conciseness?
 
@@ -78,7 +80,8 @@ I think, it is worth nothing that conciseness as the main guideline is not going
   - "Object-emojis" (when not conveying bad connotations) can be used, if and only if they are explicit enough.
 - Another way to further constraint style is to embrace a more consensual / universal style of writing, communication is unique to each individual but there are still some common grounds that are widely shared across people around the world.
 
-Some might argue that this is a very robotic tone, devoided of all interests, etc. but the premise I have in mind here is to find a way for myself to be more productive and "ship" posts, timely.
+Some might argue that this is a very robotic tone, devoid of all interests, or even humanity. 
+But it is good to remind myself that the premise to keep in mind here is for me to find a way to become more productive and simply "ship" posts more frequently.
 
 ### Checksum: the Key Takeaways Section
 
