@@ -85,7 +85,7 @@ But it is good to remind myself that the premise to keep in mind here is for me 
 
 ### Checksum: the Key Takeaways Section
 
-One way to ensure that I stick to my own rules is a sort of a recap at the end of each post which is going to force me to review my own production, check the so-called "guideline compliance check".
+One way to ensure that I stick to my own rules is a sort of a recap at the end of each post which is going to force me to review my own production, the so-called "guideline compliance check".
 
 ## Personal Objective
 
