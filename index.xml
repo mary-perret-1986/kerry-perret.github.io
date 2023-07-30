@@ -5,27 +5,21 @@
     <link>https://natalie-o-perret.github.io/</link>
     <description>Recent content on 🐈Natalie Perret🍫</description>
     <image>
+      <title>🐈Natalie Perret🍫</title>
       <url>https://natalie-o-perret.github.io/papermod-cover.png</url>
       <link>https://natalie-o-perret.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://natalie-o-perret.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Fri, 14 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://natalie-o-perret.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post-mortem✨💀: How To Handle Big Files With RabbitMQ🐇 and PostgreSQL🐘?</title>
-      <link>https://natalie-o-perret.github.io/posts/2-2021-02-15-post-mortem-how-to-handle-big-files-with-rabbitmq-and-postgresql/</link>
-      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://natalie-o-perret.github.io/posts/2-2021-02-15-post-mortem-how-to-handle-big-files-with-rabbitmq-and-postgresql/</guid>
-      <description>I love it when a plan comes together, but there are times it just doesn&amp;#39;t🪖.</description>
-    </item>
-    
-    <item>
-      <title>Challenge Accepted ✅ </title>
-      <link>https://natalie-o-perret.github.io/posts/1-2020-08-14-challenge-accepted/</link>
+      <title>📝 Blogging: A Brand New Start 🛣️</title>
+      <link>https://natalie-o-perret.github.io/posts/0-blogging_a-brand-new-start/</link>
       <pubDate>Fri, 14 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://natalie-o-perret.github.io/posts/1-2020-08-14-challenge-accepted/</guid>
-      <description>Don&amp;#39;t make promises that you can&amp;#39;t keep🙅‍♀.</description>
+      <guid>https://natalie-o-perret.github.io/posts/0-blogging_a-brand-new-start/</guid>
+      <description>Why starting from scratch again? State of the Affairs: 2020 - 2023 I used to have only two articles on this very same blog for the past 2-3 years, without much activity.
+Part of this was due to personal reasons and particularly health concerns (I had to undergo a dozen of surgeries over a two years time period). And another (bad) reason was that I used to want to make things always picture perfect, but oftentimes people like to swing like a character trait is just a trait without thinking much and discarding actual root causes.</description>
     </item>
     
     <item>
@@ -34,10 +28,10 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://natalie-o-perret.github.io/about/</guid>
-      <description>Me(h)ow-dy y&amp;rsquo;all! 🐱🐮 I am Natalie, a Software Developer 👩‍💻 currently based in Paris and working @ Veepee. I talk and write about work, legal stuff, ethics, mental health, and software development.
-What I&amp;rsquo;m up to these days 🗓️🤹‍♀️  🔭 I&amp;rsquo;m currently working on F# stuff at work and in my spare time. 🌱 I&amp;rsquo;m currently learning Rust 👯 I&amp;rsquo;m looking to collaborate on F#, C#, Rust 🤸‍♀️ I&amp;rsquo;m looking for help with Rust 💬 You can ask me about .</description>
+      <description>Who am I? I am Natalie Perret, a Software Developer, currently based in Paris and working @ Veepee.
+I like to talk and write about mental health, work, and software development.
+Some additional bits about myself I am working with F#, C# (marginally), TypeScript and Rust (with parsimony) stuff at work. I am currently learning Rust (cause I am clearly not an expert), Go (re-learning it cause I wanna help with it at work), TypeScript (not doing great) and Zig (my own quirks).</description>
     </item>
-    
     
     
   </channel>
