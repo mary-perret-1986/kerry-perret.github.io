@@ -9,19 +9,20 @@ showToc: true
 
 I had only two articles on this blog for the past 2-3 years, with very limited activity, if almost none at all.
 
-- Part of this was due to personal reasons, busy to say the least:
+- Part of this was due to personal reasons, I was busy to say the very least:
   - Spending time taking care of long-lasting health concerns. I have undergone a dozen of procedures, some were elective, some others were really not. I had to do what was needed for myself.
   - Also a full orthodontic treatment over a three-year period with many, too many appointments with dentists and my lovely orthodontist.
   - One annulment plus the relevant legal changes across multiple countries (red tape all over the world).
   - Moving twice.
   - Being promoted at work with an increasingly bigger scope, and constantly burning myself out in order to make up for the lack of proper context to build what was needed. Even when I was put on sick leaves.
+  - This is not even the end of my self-healing journey, there is so much more to come, but at least things got to a manageable level lately and I hope they can stay that way for the foreseeable future.
 - Another reason was my unassumed and constant strive for perfectionism. A trait that led me to lose focus in the details. This was not exactly wanting things to be picture perfect, but rather because of internal struggles, including what you might qualify as a "mental disorder".
-- But mental disorders and various impediments to productivity are not just exclusively "environmental" or due to poor upbringing, etc., they can also be biological / biochemical (e.g., your own tolerance to certain drugs and medicines, among other things).
-- I have matured a lot since those earlier writings, and today, I hardly recognize the person I was then. 
+- But mental disorders and various impediments to productivity are not just exclusively "environmental" (e.g., poor upbringing), they can also be biological-slash-biochemical (e.g., your own tolerance to certain drugs and medicines, your particular metabolism, etc.).
+- I have matured a lot since those posts, and today, I hardly recognize the person I was then.
 
-Despite this, I wanted to write and share more, not only for others but primarily for myself, yes a simple self-serving act. 
+Despite this, I wanted to write and share more, not only for others but primarily for myself, yes, a simple and unapologetic self-serving act. 
 
-Not just to improve or maintain my writing skills, but also to keep a record of my learnings and experiences.
+And it is not only for the sake of improving or maintain my writing skills, but also to keep a record of my learnings and experiences, how I perceive them at a given point in time.
 
 ## Coming up with a Sensible Set of Blogging Guidelines: Distilled Conciseness?
 
@@ -33,7 +34,7 @@ Scoping is key for me. I am naturally insecure about not doing enough and often 
 
 One technical way to address this is to be as concise as I can while practicing some form of self-compassion when proofreading my own material. 
 
-I also think that dividing large topics into smaller, more manageable chunks to prevent myself from getting lost in the details is another way to improve topic scoping.
+I also think that "conquer and divide" in terms of topics (posts) is another way to greatly improve topic scoping.
 
 ### Maximize Insightfulness
 
@@ -49,15 +50,17 @@ Now, in my mid-thirties, I have fully acknowledged this pattern, something that 
 
 While I still appreciate self-deprecating humor occasionally, I understand that I need to refrain from using it as a protective shield. Recognizing this pattern in my behavior is challenging but necessary.
 
-Self-sabotaging does not do any good to my mental health and it is to the writing style I want to have for this blog. 
+Self-sabotaging, even if it might look like puns or humor, does not do any good to my mental health and it is not the writing style I want to have for this blog. 
 
-### Iterate and Allow Yourself to Make Mistakes
+### Iterate and Allow Myself to Make Mistakes
 
 If it does not feel right, think Agile (without the corporatey coach gobbledygook). 
 
-By the way, I do not think Agile is suitable for everything in life, while I think Agile is okay for some IT projects for which the dynamics are okay given the context, i.e., userbase and stakeholders (in a decade of experience, I have seen quite a few falvors of it, not all of them were successful, context matters more just so much). 
+By the way, I do not think Agile is suitable for everything in life, while I think Agile might have some value for some software development projects in which the dynamics are okay given their context, e.g., userbase and stakeholders, I do not think the methology is worth being applied to every single project. 
 
-I think this iterative approach might shine even more when it comes to writing.
+Side-note: over the decade of professional experience as a software develoepr, I have seen quite a few flavors of Agile, and not all of them were successful. In my very humble opinion, context matters just so much more, i.e. do whatever works for your project, team, company, ecosystem.
+
+That being said, and getting back to the topic of this post, I think this iterative approach might shine even more when it comes to writing.
 
 ### A Consistent Style
 
@@ -70,8 +73,9 @@ I think, it is worth nothing that conciseness as the main guideline is not going
 - Avoid emojis if I do not them helpful in highlighting some things.
   - In my experience, emojis are often misused and misunderstood. 
   - This is particularly true for emojis that convey emotions, like "😏", "😉", "😆", "😅", "🤐", "😏", "🙄", "🫣", "🤨", "😠", "🥹", "😣", "😖", "😞", "😡", "🤬", "😤", 🤷‍♀️", etc. (some of which I was still using extensively myself till a couple of days ago). 
-  - Words just like emojis, can also suffer from the same indirection (e.g., very local or personal usage), but clearly not to the same extent and dictionaries often help to bring the same definitions. Point being, I should stick to words when I am struggling to make up my mind.
-  - "Object-emojis" (when not conveying bad connotations) can be used, if and only they are explicit enough.
+  - Words just like emojis, can also suffer from the same indirection (e.g., very local or personal usage), but clearly not to the same extent and dictionaries can help bringing people on the same page, i.e., non-personal definitions.
+  - Point being, I should stick to words when I am struggling to make up my mind with emojis.
+  - "Object-emojis" (when not conveying bad connotations) can be used, if and only if they are explicit enough.
 - Another way to further constraint style is to embrace a more consensual / universal style of writing, communication is unique to each individual but there are still some common grounds that are widely shared across people around the world.
 
 Some might argue that this is a very robotic tone, devoided of all interests, etc. but the premise I have in mind here is to find a way for myself to be more productive and "ship" posts, timely.
@@ -80,7 +84,7 @@ Some might argue that this is a very robotic tone, devoided of all interests, et
 
 One way to ensure that I stick to my own rules is a sort of a recap at the end of each post which is going to force me to review my own production, check the so-called "guideline compliance check".
 
-### Personal Objective
+## Personal Objective
 
 I think aiming at writing one post per month, seems like a reasonable order for myself (unless exceptional situations, e.g., country at war, terminal illness, etc.).
 
