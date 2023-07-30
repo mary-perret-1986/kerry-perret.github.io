@@ -1,68 +1,101 @@
 ---
 title: "📝 Blogging: A Brand New Start 🛣️"
-date: "2020-08-14"
+date: "2023-07-30"
 tags: ["📝 Blogging"]
 showToc: true
 ---
 
-# Why starting from scratch again?
-
 ## State of the Affairs: 2020 - 2023
 
-I used to have only two articles on this very same blog for the past 2-3 years, without much activity.
+I had only two articles on this blog for the past 2-3 years, with very limited activity, if almost none at all.
 
-- Part of this was due to personal reasons and particularly health concerns (I had to undergo a dozen of surgeries over a two years time period).
-- And another (bad) reason was that I used to want to make things always picture perfect, but oftentimes people like to swing like a character trait is just a trait without thinking much and discarding actual root causes. I have never been huge on:
-  - One particularly downside of going at such great lenghts, is that I used to get lost into details. 
-  - It was not only due to sheer perfectionism, per se. but also internal struggles, some of them were tied to what you would call "mental disorder".
-  - But, sometimes, mental disorders are not just environmental or there just because of poor upbringing but because of biological / biochemical reasons.
-- I have matured a lot about the few bits I have written about before, and it would be lying to say that I can still can recognize who I was then when writing those articles. I feel like I was a lot more childish and insecure than I am now, that's for sure.
+- Part of this was due to personal reasons, busy to say the least:
+  - Spending time taking care of long-lasting health concerns. I have undergone a dozen of procedures, some were elective, some others were really not. I had to do what was needed for myself.
+  - Also a full orthodontic treatment over a three-year period with many, too many appointments with dentists and my lovely orthodontist.
+  - One annulment plus the relevant legal changes across multiple countries (red tape all over the world).
+  - Moving twice.
+  - Being promoted at work with an increasingly bigger scope, and constantly burning myself out in order to make up for the lack of proper context to build what was needed. Even when I was put on sick leaves.
+- Another reason was my unassumed and constant strive for perfectionism. A trait that led me to lose focus in the details. This was not exactly wanting things to be picture perfect, but rather because of internal struggles, including what you might qualify as a "mental disorder".
+- But mental disorders and various impediments to productivity are not just exclusively "environmental" or due to poor upbringing, etc., they can also be biological / biochemical (e.g., your own tolerance to certain drugs and medicines, among other things).
+- I have matured a lot since those earlier writings, and today, I hardly recognize the person I was then. 
 
-But still, I wanted to write more, and share more, not only for others, but also first and foremost as a very self-serving act, for myself. Not necessarily to practice my writing skills, but also to keep track of what I have learnt, what I have been through.
+Despite this, I wanted to write and share more, not only for others but primarily for myself, yes a simple self-serving act. 
+
+Not just to improve or maintain my writing skills, but also to keep a record of my learnings and experiences.
 
 ## Coming up with a Sensible Set of Blogging Guidelines: Distilled Conciseness?
 
-Due to how my internal cognitive processes and thoughts work, I needed to stick to some framework (of mine) that fits my own peculiar mindset and limit the things I want to do with this blog. 
+Given my thought processes, I needed to adhere to a framework that fits my mindset and limits what I want to do with this blog.
 
 ### Topic Scoping
 
-- I think scoping is the key for me. I am, by nature, very insecure about not doing enough, and most people who know me, would say that I am often going the extra mile(s), even when there is objectively nothing at stake. Always scared of not doing enough due to the fear of rejection and the lack of proper self-esteem.
-- One way to address the point above is to be as concise as I can, and to be nice with myself (only a handful of people on Earth know that typing those words is actually taking some efforts, there is a lot of self-loathing).
-- Split as many necessary individual and mangeable chunk-sized topics as possible, if the topic I am tackling starts gets too big, i.e., avoid dwindling in the weeds.
+Scoping is key for me. I am naturally insecure about not doing enough and often go the extra mile, even when nothing is at stake. This fear stems from potential rejection and a lack of self-esteem.
 
-### Avoid Emojis whenever they don't bring conciseness
+One technical way to address this is to be as concise as I can while practicing some form of self-compassion when proofreading my own material. 
 
-I.e., when they have not been clearly defined. 
-
-#### Emotions and Representations
-
-In my experience, I have found that emojis are not only often poorly used, but also quite often misunderstood. It is often cumulative and pervasive, they tend to build up.
-
-I think the statement particularly holds true for emojis that intend to convey emotions, such as "😏", "😉", "😆", "😅", "🤐", "😏", "🙄", "🫣", "🤨", "😠", "🥹", "😣", "😖", "😞", "😡", "🤬", "😤", 🤷‍♀️", etc. (some of which I use extensively myself but get easily triggered when I do not know intinmely how somebody else is using them), because of what I have mentioned earlier: the fear of rejection, ultimately, but also because it can be confusing to the other person and to others.
-
-#### Everybody is unique in their own way, so is their communication.
-
-Of course, I have my own bias of inscure woman who has some degree of PTSD. And for what it is worth, it goes both ways, as someone sending a message, but also as a person receiving a message with emojis. 
-
-You never really know the background of the people you are interacting with (unless they are your very close ones). 
-
-I think there is a lot of internal and deeply personal representation associated to images and hence emojis. For example, the way we smile, laugh, is not something universal, it is not cutural, it is local to your life experience which is unique. Some people might take them more seriously than others depending on a wide variety factors, can be things like relating to one's psyche like self-confidence, but also vision impairement, etc. 
-
-#### What about objects?
-
-Putting aside the well known things that can allude to sexual connmotations, I think they are fine, (also if there are things defining / explicitign their meaning so that they aren't too vague nor too distractive), as long as mentionned earlier they can bring conciseness, it all boils down to just this eventually.
-
-#### Actual conciseness
-
-Words can also suffer from the same indirection, but clearly not to the same extent. Besides, there are at least dictionaries with usually wiledly acknowledged consensus when it comes to their definitions (personal usage it's still whole another thing, i.e., words are not perfect).
+I also think that dividing large topics into smaller, more manageable chunks to prevent myself from getting lost in the details is another way to improve topic scoping.
 
 ### Maximize Insightfulness
 
-Digging into an article a post takes time, I think another solid piece of guideline for me is to maximize the benefits someone (including myself) can get out of an article, if any (your mileage may vary, taste is not accounting). 
+Reading an article takes time, so one of my key guidelines is to try to maximize the benefits a reader (including myself) can gain out of it.
 
-I do not like the idea of someone spending more 5-10 min of their time going through an article.
+I do not like the idea of someone spending more than 5-10 min of their precious time going through one of my articles.
 
-### Iterate and allow yourself to make some mistakes
+### Stop Self-sabotaging
 
-If it does not feel right, think Agile (without all the globeydook), I am not saying your corporate Agile coach. I don't think Agile is like for everything, it's okay for IT projects for which the dynamics are okay given the userbase and the stakeholders, but I think the iterative process might shine even more when it comes to writing.
+I have come to realize that, due to my personal history with PTSD, I have developed a tendency to self-sabotage as a way to shield myself from external rejection. For a long time, I claimed to be a fan of self-deprecating humor when in reality, it was a manifestation of self-loathing. I frequently apologize, a behavior that is as common for me as using commas in a sentence.
 
+Now, in my mid-thirties, I have fully acknowledged this pattern, something that leaves me feeling, somewhat regretful, especially because some people had hinted at this possibility earlier in my life. I was not ready to confront this issue at the time.
+
+While I still appreciate self-deprecating humor occasionally, I understand that I need to refrain from using it as a protective shield. Recognizing this pattern in my behavior is challenging but necessary.
+
+Self-sabotaging does not do any good to my mental health and it is to the writing style I want to have for this blog. 
+
+### Iterate and Allow Yourself to Make Mistakes
+
+If it does not feel right, think Agile (without the corporatey coach gobbledygook). 
+
+By the way, I do not think Agile is suitable for everything in life, while I think Agile is okay for some IT projects for which the dynamics are okay given the context, i.e., userbase and stakeholders (in a decade of experience, I have seen quite a few falvors of it, not all of them were successful, context matters more just so much). 
+
+I think this iterative approach might shine even more when it comes to writing.
+
+### A Consistent Style
+
+I think, it is worth nothing that conciseness as the main guideline is not going to be enough in order to prevent myself from dwiling in the weeds. In order to further constraint the style and the efficiency when writing, I would like to stick to a few things when it comes style:
+- No contraction, plain and simple.
+- Simple and short sentences.
+- No poetic or lyrical stuff (unless the post is an exercice of style on its own).
+- Avoid acronyms whenever possible (except if already defined elsewhere in the post, or widely well-known).
+- No private joke of references.
+- Avoid emojis if I do not them helpful in highlighting some things.
+  - In my experience, emojis are often misused and misunderstood. 
+  - This is particularly true for emojis that convey emotions, like "😏", "😉", "😆", "😅", "🤐", "😏", "🙄", "🫣", "🤨", "😠", "🥹", "😣", "😖", "😞", "😡", "🤬", "😤", 🤷‍♀️", etc. (some of which I was still using extensively myself till a couple of days ago). 
+  - Words just like emojis, can also suffer from the same indirection (e.g., very local or personal usage), but clearly not to the same extent and dictionaries often help to bring the same definitions. Point being, I should stick to words when I am struggling to make up my mind.
+  - "Object-emojis" (when not conveying bad connotations) can be used, if and only they are explicit enough.
+- Another way to further constraint style is to embrace a more consensual / universal style of writing, communication is unique to each individual but there are still some common grounds that are widely shared across people around the world.
+
+Some might argue that this is a very robotic tone, devoided of all interests, etc. but the premise I have in mind here is to find a way for myself to be more productive and "ship" posts, timely.
+
+### Checksum: the Key Takeaways Section
+
+One way to ensure that I stick to my own rules is a sort of a recap at the end of each post which is going to force me to review my own production, check the so-called "guideline compliance check".
+
+### Personal Objective
+
+I think aiming at writing one post per month, seems like a reasonable order for myself (unless exceptional situations, e.g., country at war, terminal illness, etc.).
+
+## Key Takeaways
+
+- My past blogging activity was limited due to personal health issues and a struggle with perfectionism.
+- I have changed a LOT since the previous posted material and I am now in much better shape and able to commit to a more consistent activity.
+- I want to blog more for two reasons:
+  1. To keep track of my personal development.
+  2. To share experiences and learnings.
+- In order to increase the odds of success about being more consistent (a minimum of writing one article every month), and practicing what I have been preaching for myself, i.e., dogfeeding, I needed a sensible "framework" for blogging, suited to my own peculiar mindset, and the guidelines I am coming up with are:
+  - Precise topic scoping to break down complex topics and avoid unnecessary detail-slash-disgression.
+  - Limiting the use of emojis unless they enhance conciseness and clarity.
+  - Maximizing insightfulness to provide value to readers within a 5-10 minute read.
+  - Encouraging an iterative process for content development, akin to the Agile methodology.
+  - Stop self-sabotaging and its derivatives.
+  - Apply a consistent style throughout each post.
+  - A Key Takeaways section at the end of each post as way to recap and ensure the guidelines have been properly executed.
