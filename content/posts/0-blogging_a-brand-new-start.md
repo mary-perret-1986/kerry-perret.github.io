@@ -72,7 +72,7 @@ I think, it is worth nothing that conciseness as the main guideline is not going
 - No poetic or lyrical stuff (unless the post is an exercice of style on its own).
 - Avoid acronyms whenever possible (except if already defined elsewhere in the post, or widely well-known).
 - No private joke of references.
-- Avoid emojis if I do not them helpful in highlighting some things.
+- Avoid emojis if they are not helpful in highlighting particular .
   - In my experience, emojis are often misused and misunderstood. 
   - This is particularly true for emojis that convey emotions, like "😏", "😉", "😆", "😅", "🤐", "😏", "🙄", "🫣", "🤨", "😠", "🥹", "😣", "😖", "😞", "😡", "🤬", "😤", 🤷‍♀️", etc. (some of which I was still using extensively myself till a couple of days ago). 
   - Words just like emojis, can also suffer from the same indirection (e.g., very local or personal usage), but clearly not to the same extent and dictionaries can help bringing people on the same page, i.e., non-personal definitions.
@@ -80,7 +80,7 @@ I think, it is worth nothing that conciseness as the main guideline is not going
   - "Object-emojis" (when not conveying bad connotations) can be used, if and only if they are explicit enough.
 - Another way to further constraint style is to embrace a more consensual / universal style of writing, communication is unique to each individual but there are still some common grounds that are widely shared across people around the world.
 
-Some might argue that this is a very robotic tone, devoid of all interests, or even humanity. 
+Some might argue that this is a very neuro-robotic tone, devoid of all interests, or even humanity. 
 But it is good to remind myself that the premise to keep in mind here is for me to find a way to become more productive and simply "ship" posts more frequently.
 
 ### Checksum: the Key Takeaways Section
