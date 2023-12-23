@@ -20,9 +20,6 @@
     --top-link: rgba(179, 179, 179, 0.4);
     --top-link-bg: rgb(214, 214, 214, 0.4);
     --top-link-hover-bg: rgb(214, 214, 214, 1);
-    --global-transition: all 0.2s ease-in-out;
-    --global-active-transform: scale(0.85);
-    --toggle-theme-transition: 250ms;
 }
 
 .dark {
@@ -38,7 +35,7 @@
     --border: rgb(65, 65, 65);
     --top-link: rgb(108, 108, 108, 0.2);
     --top-link-bg: rgb(65, 66, 68, 0.2);
-    --top-link-hover-bg: rgb(65, 66, 68, 1);
+    --top-link-hover-bg: rgb(3, 8, 18);
 }
 
 .post-content blockquote {
@@ -51,7 +48,6 @@
 }
 
 #searchbox input:hover {
-    transition: var(--global-transition);
     background: var(--entry-hover);
     border-color: var(--link-hover);
 }
@@ -69,11 +65,7 @@
     border-radius: var(--radius);
     border: 1px solid var(--border);
 }
-
-
 .archive-entry:hover {
-    transition: var(--global-transition);
-    transform: translateY(-3px);
     background-color: var(--entry-hover);
 }
 
@@ -83,10 +75,6 @@
 
 .archive-entry:hover > .archive-meta {
     color: var(--primary);
-}
-
-.archive-entry:active {
-    transform: var(--global-active-transform);
 }
 
 .archive-entry-title {
@@ -103,7 +91,6 @@
 
 #theme-toggle:hover {
     --primary: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .post-tags a {
@@ -112,16 +99,10 @@
 
 .post-tags li:hover {
     --secondary: var(--link-hover);
-    transition: var(--global-transition);
-    transform: translateY(-3px);
 }
 
 .post-tags a:hover {
     background-color: var(--entry-hover);
-}
-
-.post-tags a:active {
-    transform: var(--global-active-transform);
 }
 
 .buttons a {
@@ -131,18 +112,11 @@
 
 .buttons:hover {
     --secondary: var(--link-hover);
-    transition: var(--global-transition);
-    transform: translateY(-3px);
 }
 
 .buttons a:hover {
     background-color: var(--entry-hover);
 }
-
-.buttons a:active {
-    transform: var(--global-active-transform);
-}
-
 
 .paginav span:hover:not(.title) {
     box-shadow: none;
@@ -171,32 +145,23 @@
 
 .post-entry:hover {
     transform: translateY(-3px);
-    transition: var(--global-transition);
     background-color: var(--entry-hover);
-}
-
-.post-entry:active {
-    transform: var(--global-active-transform);
 }
 
 .post-entry:hover > .entry-header > h2 {
     color: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .post-entry:hover > .entry-content {
     color: var(--primary);
-    transition: var(--global-transition);
 }
 
 .post-entry:hover > .entry-footer {
     color: var(--primary);
-    transition: var(--global-transition);
 }
 
 .terms-tags li:hover {
     --primary: var(--link-hover);
-    transition: var(--global-transition);
     transform: translateY(-3px);
 }
 
@@ -207,10 +172,6 @@
 
 .terms-tags a:hover {
     background-color: var(--entry-hover);
-}
-
-.terms-tags a:active {
-    transform: var(--global-active-transform);
 }
 
 .post-content code {
@@ -224,13 +185,10 @@
 
 .post-content a code:hover {
     box-shadow: 0 3px 0 var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .post-content a {
-    box-shadow: 0 2px;
     font-weight: 500;
-    box-shadow: 0 3px var(--secondary);
 }
 
 .post-content a:hover {
@@ -240,7 +198,6 @@
 
 .toc a {
     text-decoration: none;
-    box-shadow: 0 2;
     font-weight: 500;
 }
 
@@ -261,7 +218,6 @@
 
 .copy-code:hover {
     background-color: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 #searchResults li:hover{
@@ -270,18 +226,17 @@
 
 a:hover {
     color: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .footer a {
     font-weight: bold;
-    border-bottom: 0px;
-} 
+    border-bottom: 0;
+}
 
 .footer a:hover {
     color: var(--link-hover);
-    border-bottom: 0px;
-} 
+    border-bottom: 0;
+}
 
 .anchor:hover{
     --primary: var(--link-hover);
@@ -296,7 +251,6 @@ a:hover {
 }
 
 .top-link:hover {
-    transition: var(--global-transition);
     color: var(--link-hover);
     background-color: var(--top-link-hover-bg);
 }
@@ -315,7 +269,6 @@ a:hover {
 
 .gist .gist-meta > a:hover {
     box-shadow: none;
-    transition: var(--global-transition);
     color: var(--link-hover);
 }
 
@@ -325,43 +278,23 @@ a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb:hover {
     background: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .post-content :not(table) ::-webkit-scrollbar-thumb:hover {
     background: var(--link-hover);
-    transition: var(--global-transition);
 }
 
 .toc:hover {
     border-color: var(--link-hover);
     background-color: var(--entry-hover);
-    transition: var(--global-transition);
-}
-
-@keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-1.25em);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-details[open] .inner {
-    animation-name: fadeInDown;
-    animation-duration: 0.5s;
 }
 
 .share-buttons:hover {
     background-color: var(--entry-hover);
-    transition: var(--global-transition);
 }
 
 #theme-toggle svg {
@@ -374,17 +307,6 @@ body.dark #theme-toggle::before {
 body:not(.dark) #theme-toggle:before {
     content: '🌒';
 }
-#theme-toggle {
-    transition: var(--global-transition);
-    transform: scale(0.9);
-}
-
-@media screen and (min-width: 768px) {
-    #theme-toggle:hover {
-        transition: var(--global-transition);
-        transform: scale(1.2);
-    }
-}
 
 .breadcrumbs::before {
     content: '🏠';
@@ -392,20 +314,6 @@ body:not(.dark) #theme-toggle:before {
 
 .page-header svg {
     display: none;
-}
-
-
-.post-entry, .toc {
-    transition: 
-        transform .1s, 
-        background-color var(--toggle-theme-transition), 
-        border var(--toggle-theme-transition);
-}
-
-.transition-delay {
-    transition: 
-        background-color var(--toggle-theme-transition), 
-        border var(--toggle-theme-transition);
 }
 
 .pagination {

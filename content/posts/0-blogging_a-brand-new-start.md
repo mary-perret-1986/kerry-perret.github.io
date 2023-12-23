@@ -1,6 +1,5 @@
 ---
 title: "📝 Blogging: A Brand New Start 🛣️"
-date: "2023-07-30"
 tags: ["📝 Blogging"]
 showToc: true
 ---
@@ -11,7 +10,7 @@ I had only two articles on this blog for the past 2-3 years, with very limited a
 
 - Part of this was due to personal reasons, I was busy to say the very least:
   - Spending time taking care of long-lasting health concerns. I have undergone a dozen of procedures, some were elective, some others were really not. I had to do what was needed for myself.
-  - Also a full orthodontic treatment over a three-year period with many, too many appointments with dentists and my lovely orthodontist.
+  - Also, a full orthodontic treatment over a three-year period with many, too many appointments with dentists and my lovely orthodontist.
   - One annulment plus the relevant legal changes across multiple countries (red tape all over the world).
   - Moving twice.
   - Being promoted at work with an increasingly bigger scope, and constantly burning myself out in order to make up for the lack of proper context to build what was needed. Even when I was put on sick leaves.
