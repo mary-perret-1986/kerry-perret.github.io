@@ -10,13 +10,14 @@
       <link>https://natalie-o-perret.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://natalie-o-perret.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://natalie-o-perret.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>📝 Blogging</title>
-      <link>https://natalie-o-perret.github.io/tags/blogging/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>📝 Writing</title>
+      <link>https://natalie-o-perret.github.io/tags/writing/</link>
+      <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://natalie-o-perret.github.io/tags/blogging/</guid>
+      <guid>https://natalie-o-perret.github.io/tags/writing/</guid>
       <description></description>
     </item>
     
