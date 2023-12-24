@@ -93,18 +93,19 @@
     --primary: var(--link-hover);
 }
 
-.post-tags a {
-    border: 1px solid var(--border);
+.post-tags li:hover {
+    --primary: var(--link-hover);
+    transform: translateY(-3px);
 }
 
-.post-tags li:hover {
-    --secondary: var(--link-hover);
+.post-tags a{
+    background-color: var(--entry);
+    border: 1px solid var(--border);
 }
 
 .post-tags a:hover {
     background-color: var(--entry-hover);
 }
-
 .buttons a {
     font-weight: bold;
     border: 1px solid var(--border);
