@@ -4,6 +4,11 @@
     <title>📝 Writing on 🐈Natalie Perret🍫</title>
     <link>https://natalie-o-perret.github.io/tags/writing/</link>
     <description>Recent content in 📝 Writing on 🐈Natalie Perret🍫</description>
+    <image>
+      <title>🐈Natalie Perret🍫</title>
+      <url>https://natalie-o-perret.github.io/papermod-cover.png</url>
+      <link>https://natalie-o-perret.github.io/papermod-cover.png</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate>
@@ -13,7 +18,8 @@
       <link>https://natalie-o-perret.github.io/posts/0-writing_blogging-guidelines/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://natalie-o-perret.github.io/posts/0-writing_blogging-guidelines/</guid>
-      <description>A Sensible Set of Writing Guidelines: Distilled Conciseness? Given how my brain works, I needed to come up a simple set of rules to become more productive when writing blog articles.&#xA;Topic Scoping Scoping is often key in writing and one practical way to enforce that, is to be as concise as I can and that involves using the most accurate terms to limit the number of words needed to convey.</description>
+      <description>A Sensible Set of Writing Guidelines: Distilled Conciseness? Given how my brain works, I needed to come up a simple set of rules to become more productive when writing blog articles.
+Topic Scoping Scoping is often key in writing and one practical way to enforce that, is to be as concise as I can and that involves using the most accurate terms to limit the number of words needed to convey.</description>
     </item>
   </channel>
 </rss>

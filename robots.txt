@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://natalie-o-perret.github.io/sitemap.xml
