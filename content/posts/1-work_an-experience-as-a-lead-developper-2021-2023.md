@@ -1,20 +1,47 @@
 ---
-title: "💼 Work: An Experience as a Lead Developer [2021-2023] 👩‍💻"
+title: "Work: An Experience as a Lead Developer [2021-2023]"
 date: "2023-07-30"
-tags: ["💼 Work"]
+tags: ["Work"]
 showToc: true
 draft: true
 ---
 
 ## Timeline
 
+{{< details "This is the summary" >}}
+yada daa
+- a 
+- b
+  - `c`
+  - *d*
+    - **e**
+
+a
+
+```fsharp
+let inline f a b = a + b
+type A private () = 
+  let a = 42
+```
+
+b
+
+{{< /details >}}
+
+```fsharp
+let n = 42
+let f1 a b = a + b
+let f2 = f1 n
+let c = f2 1 
+```
+
 ### 2021: Taking Over
 
 I took over the lead of a team with a particular setup:
-- 3 Software Integration Specialists (SIS), also endorsing some support duties
-- 1 Product Owner (PO)
-- 1 Co-op student (dev)
-- 1 Lead Developer (LD), myself, "semi-managing" the co-op dev
+- 3 Software Integration Specialists (SIS), also endorsing some support duties.
+- 1 Product Owner (PO).
+- 1 Co-op student (dev).
+- 1 Lead Developer (LD), myself, "semi-managing" the co-op dev.
 
 The scope of the team was quite peculiar in many ways:
 - In the past, I have always worked in team where the topology was either:

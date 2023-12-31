@@ -1,13 +1,15 @@
 ---
-title: "📝 Writing: Blogging Guidelines 🛣️"
+title: "Writing: Blogging Guidelines"
 date: "2023-07-30"
-tags: ["📝 Writing"]
+tags: ["Writing", "Blogging"]
 showToc: true
+series:
+  - TIL
 ---
 
 ## A Sensible Set of Writing Guidelines: Distilled Conciseness?
 
-Given how my brain works, I needed to come up a simple set of rules to become more productive when writing blog articles.
+Given how my brain works, I needed to come up with a simple set of rules to become more productive when writing blog articles.
 
 ### Topic Scoping
 
@@ -25,7 +27,7 @@ I do not like the idea of someone spending more than 5-10 min of their precious 
 
 Due to my personal history with PTSD, I had for a long time developed a tendency to subconsciously self-sabotage as a way to shield myself from external rejection.
 
-I used to think I was a huge fan of self-deprecating humor when in reality, it was one of the manifestations of my self-loathing.
+I used to think I was a huge fan of self-deprecating humor when in reality, it was one of the manifestations of self-loathing.
 
 Now, in my mid-30's (at the time of writing), I have fully acknowledged this pattern, while I still appreciate self-deprecating humor occasionally, I understand that I need to refrain from using it as a protective shield. 
 

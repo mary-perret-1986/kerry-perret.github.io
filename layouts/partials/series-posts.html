@@ -1,0 +1,14 @@
+{{/* From: https://npf.io/2014/08/making-it-a-series/ */}}
+{{- if .Params.series }}
+    {{- $name := index .Params.series 0 }}
+    <p><a href="" id="series"></a>Part of the <em>{{$name}}</em> series:</p>
+    {{- $name := $name | urlize }}
+    {{- $series := index .Site.Taxonomies.series $name }}
+    <ol reversed class="series">
+    {{- range $series.Pages }}
+      <li><a href="{{.Permalink}}">{{.LinkTitle}}</a>,&#32;
+        {{- .Date.Format .Site.Params.DateFormat -}}
+      </li>
+    {{- end }}
+    </ol>
+{{- end }}

@@ -11,7 +11,7 @@
     --entry-hover: rgb(235, 233, 233);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(82, 82, 82);
-    --tertiary: rgb(223, 215, 219);
+    --tertiary: rgb(193, 185, 189);
     --content: rgb(31, 31, 31);
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(247, 247, 247);
@@ -28,7 +28,7 @@
     --entry-hover: rgb(39, 39, 43);
     --primary: rgb(218, 218, 219);
     --secondary: rgb(180, 182, 184);
-    --tertiary: rgb(65, 66, 68);
+    --tertiary: rgb(90, 92, 96);
     --content: rgb(196, 196, 197);
     --hljs-bg: rgb(46, 46, 51);
     --code-bg: rgb(55, 56, 62);
@@ -197,12 +197,83 @@
     box-shadow: 0 3px var(--link-hover);
 }
 
+.collapsable {
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: var(--radius);
+    display: block;
+}
+
+.collapsable:hover {
+    border: solid 1px var(--link-hover);
+    background: var(--entry-hover);
+}
+
+.collapsable details summary {
+    margin-inline-start: 0;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.toc details summary {
+    margin-inline-start: 0;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.toc .inner {
+    margin: 0 7px 2px 7px;
+}
+
+.collapsable .inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.collapsable .inner {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.collapsable .inner li {
+    margin-top: 0;
+}
+
+.collapsable .inner p {
+    margin-bottom: 10px;
+}
+
+.toc details[open] summary {
+    cursor: pointer;
+    border-bottom: 1px dashed var(--tertiary);
+}
+
+.collapsable details[open] summary {
+    cursor: pointer;
+    border-bottom: 1px dashed var(--tertiary);
+}
+
+.toc {
+    display: block;
+    padding: 0;
+    margin: 0 0 30px
+}
+
 .toc a {
     text-decoration: none;
     font-weight: 500;
 }
 
+.collapsable a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
 .toc a:hover {
+    box-shadow: none;
+}
+
+.collapsable a:hover {
     box-shadow: none;
 }
 

@@ -1,7 +1,7 @@
 ---
-title: "💼 Work: Is it All About Money? 💵"
+title: "Work: Is it All About Money?"
 date: "2023-07-30"
-tags: ["💼 Work"]
+tags: ["Work"]
 showToc: true
 draft: true
 ---
