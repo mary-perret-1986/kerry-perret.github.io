@@ -24,8 +24,7 @@ type A private () =
   let a = 42
 ```
 
-b
-
+sd
 {{< /details >}}
 
 ```fsharp

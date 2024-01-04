@@ -7,7 +7,7 @@
     --footer-height: 60px;
     --radius: 8px;
     --theme: rgb(252, 252, 252);
-    --entry: rgb(255, 255, 255);
+    --entry: rgb(244, 244, 244);
     --entry-hover: rgb(235, 233, 233);
     --primary: rgb(30, 30, 30);
     --secondary: rgb(82, 82, 82);
@@ -19,23 +19,23 @@
     --link-hover: rgb(219, 49, 143);
     --top-link: rgba(179, 179, 179, 0.4);
     --top-link-bg: rgb(214, 214, 214, 0.4);
-    --top-link-hover-bg: rgb(214, 214, 214, 1);
+    --top-link-hover-bg: rgb(214, 214, 214, 0.9);
 }
 
 .dark {
-    --theme: rgb(29, 30, 32);
-    --entry: rgb(46, 46, 51);
-    --entry-hover: rgb(39, 39, 43);
-    --primary: rgb(218, 218, 219);
-    --secondary: rgb(180, 182, 184);
-    --tertiary: rgb(90, 92, 96);
-    --content: rgb(196, 196, 197);
-    --hljs-bg: rgb(46, 46, 51);
-    --code-bg: rgb(55, 56, 62);
+    --theme: rgb(32, 29, 30);
+    --entry: rgb(61, 54, 57);
+    --entry-hover: rgb(43, 39, 40);
+    --primary: rgb(219, 218, 218);
+    --secondary: rgb(184, 180, 182);
+    --tertiary: rgb(96, 90, 93);
+    --content: rgb(197, 196, 197);
+    --hljs-bg: rgb(51, 46, 48);
+    --code-bg: rgb(62, 55, 59);
     --border: rgb(65, 65, 65);
-    --top-link: rgb(108, 108, 108, 0.2);
-    --top-link-bg: rgb(65, 66, 68, 0.2);
-    --top-link-hover-bg: rgb(3, 8, 18);
+    --top-link: rgba(108, 108, 108, 0.2);
+    --top-link-bg: rgba(68, 65, 67, 0.2);
+    --top-link-hover-bg: rgba(68, 65, 67, 0.9);
 }
 
 .post-content blockquote {
@@ -197,6 +197,10 @@
     box-shadow: 0 3px var(--link-hover);
 }
 
+.toc {
+    background: var(--entry);
+}
+
 .collapsable {
     border: 1px solid var(--border);
     background: var(--entry);
@@ -209,10 +213,24 @@
     background: var(--entry-hover);
 }
 
+.details {
+    margin-left: 2px;
+}
+
 .collapsable details summary {
     margin-inline-start: 0;
     padding: 6px;
     cursor: pointer;
+}
+
+details[open] > summary::marker {
+    display: none;
+    content: "🔽";
+}
+
+details > summary::marker {
+    display: none;
+    content: "▶️";
 }
 
 .toc details summary {
@@ -390,4 +408,8 @@ body:not(.dark) #theme-toggle:before {
 
 .pagination {
     font-weight: bold;
+}
+
+.highlight pre {
+    background-color: transparent!important;
 }
