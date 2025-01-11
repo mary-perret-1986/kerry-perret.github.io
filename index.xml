@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🐈Natalie Perret🍫</title>
     <link>https://natalie-o-perret.github.io/</link>
     <description>Recent content on 🐈Natalie Perret🍫</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.140.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 30 Jul 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://natalie-o-perret.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -13,16 +13,32 @@
       <link>https://natalie-o-perret.github.io/posts/0-writing_blogging-guidelines/</link>
       <pubDate>Sun, 30 Jul 2023 00:00:00 +0000</pubDate>
       <guid>https://natalie-o-perret.github.io/posts/0-writing_blogging-guidelines/</guid>
-      <description>A Sensible Set of Writing Guidelines: Distilled Conciseness? Given how my brain works, I needed to come up with a simple set of rules to become more productive when writing blog articles.
-Topic Scoping Scoping is often key in writing and one practical way to enforce that, is to be as concise as I can and that involves using the most accurate terms to limit the number of words needed to convey.</description>
+      <description>&lt;h2 id=&#34;a-sensible-set-of-writing-guidelines-distilled-conciseness&#34;&gt;A Sensible Set of Writing Guidelines: Distilled Conciseness?&lt;/h2&gt;
+&lt;p&gt;Given how my brain works, I needed to come up with a simple set of rules to become more productive when writing blog articles.&lt;/p&gt;
+&lt;h3 id=&#34;topic-scoping&#34;&gt;Topic Scoping&lt;/h3&gt;
+&lt;p&gt;Scoping is often key in writing and one practical way to enforce that, is to be as concise as I can and that involves using the most accurate terms to limit the number of words needed to convey.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About🆔</title>
       <link>https://natalie-o-perret.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://natalie-o-perret.github.io/about/</guid>
-      <description>Who am I? I am Natalie Perret, a Software Developer, currently based in Paris and working @ Veepee.
-Some additional bits about myself I like to talk and write about mental health, work, and software development. I am working with F#, C# (marginally), TypeScript and Rust (with parsimony) stuff at work. I am currently learning Rust (cause I am clearly not an expert), Go (re-learning it cause I wanna help with it at work), TypeScript (not doing great) and Zig (my own quirks).</description>
+      <description>&lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;
+&lt;p&gt;I am Natalie Perret, a Software Developer, currently based in Paris and working @ &lt;a href=&#34;https://www.veepee.com&#34;&gt;Veepee&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;some-additional-bits-about-myself&#34;&gt;Some additional bits about myself&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I like to talk and write about mental health, work, and software development.&lt;/li&gt;
+&lt;li&gt;I am working with F#, C# (marginally), TypeScript and Rust (with parsimony) stuff at work.&lt;/li&gt;
+&lt;li&gt;I am currently learning Rust (cause I am clearly not an expert), Go (re-learning it cause I wanna help with it at work), TypeScript (not doing great) and Zig (my own quirks).&lt;/li&gt;
+&lt;li&gt;You can probably ask my help about .NET, C# or F#.&lt;/li&gt;
+&lt;li&gt;You can find some marginal activity of mine on:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/natalie-o-perret&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mastodon.social/@natalie_perret&#34;&gt;Mastodon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/natalie-perret&#34;&gt;LinkedIn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>
