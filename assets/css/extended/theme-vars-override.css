@@ -240,7 +240,7 @@ details > summary::marker {
 }
 
 .toc .inner {
-    margin: 0 7px 2px 7px;
+    margin: 0 7px 2px 15px;
 }
 
 .collapsable .inner {
