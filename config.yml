@@ -1,6 +1,6 @@
 baseURL: "https://natalie-o-perret.github.io/"
 title: 🐈Natalie Perret🍫
-paginate: 3
+pagerSize: 3
 theme: hugo-PaperMod
 
 enableInlineShortcodes: true
